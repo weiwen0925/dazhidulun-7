@@ -142,10 +142,10 @@ a{color:inherit;text-decoration:none;}
  background:linear-gradient(135deg,var(--gold),var(--goldL));color:#fff;
  display:flex;align-items:center;justify-content:center;
  font-family:"Noto Sans TC",sans-serif;font-size:16px;font-weight:700;}
-.toc-text{flex:1;}
-.toc-name{font-size:19.5px;color:var(--accent);font-weight:700;line-height:1.6;}
-.toc-sub{font-size:14.5px;color:var(--text-muted);font-family:"Noto Sans TC",sans-serif;
- margin-top:4px;line-height:1.6;}
+.toc-text{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px;}
+.toc-name{display:block;font-size:19.5px;color:var(--accent);font-weight:700;line-height:1.45;}
+.toc-sub{display:block;font-size:14.5px;color:var(--text-muted);
+ font-family:"Noto Sans TC",sans-serif;line-height:1.55;}
 
 /* ── 章節 ── */
 .chapter{margin:34px 0 0;scroll-margin-top:10px;}
