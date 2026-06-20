@@ -66,6 +66,19 @@ a{color:inherit;text-decoration:none;}
  color:var(--sbText);opacity:.72;text-align:center;line-height:1.25;}
 .sb-item.active .sb-label{opacity:1;color:var(--goldL);}
 
+/* ── 側欄尾端：跨卷外部連結 ── */
+.sb-divider{width:52px;height:1px;
+ background:linear-gradient(90deg,transparent,var(--gold),transparent);
+ margin:14px auto 10px;opacity:.65;}
+.sb-item.sb-ext .sb-circle{background:transparent;
+ border:1px dashed rgba(212,196,168,.55);color:var(--gold);
+ font-size:15px;font-weight:600;}
+.sb-item.sb-ext:hover .sb-circle{background:rgba(184,134,11,.18);
+ border-color:var(--goldL);color:var(--goldL);
+ box-shadow:0 0 8px rgba(184,134,11,.3);}
+.sb-item.sb-ext .sb-label{font-size:10.5px;opacity:.72;}
+.sb-item.sb-ext:hover .sb-label{opacity:1;color:var(--goldL);}
+
 /* ── 漢堡 ── */
 #sbToggle{position:fixed;left:14px;top:14px;z-index:130;display:none;
  width:42px;height:42px;border-radius:8px;border:1px solid var(--border);
@@ -109,11 +122,22 @@ a{color:inherit;text-decoration:none;}
 .toc-desc{text-align:center;font-family:"Noto Sans TC",sans-serif;font-size:16px;
  color:var(--text-muted);margin-bottom:30px;letter-spacing:1.5px;}
 .toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;}
+.toc-cell{position:relative;border-radius:10px;
+ transition:transform .18s,box-shadow .18s;}
+.toc-cell:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(91,58,41,.14);}
 .toc-card{display:flex;gap:14px;background:var(--card);border:1px solid var(--border);
- border-radius:10px;padding:16px 18px;cursor:pointer;
- transition:transform .18s,box-shadow .18s,border-color .18s;}
-.toc-card:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(91,58,41,.14);
- border-color:var(--gold);}
+ border-radius:10px;padding:16px 56px 16px 18px;cursor:pointer;
+ transition:border-color .18s;}
+.toc-cell:hover .toc-card{border-color:var(--gold);}
+.yt-link{position:absolute;bottom:12px;right:12px;width:32px;height:32px;
+ border-radius:50%;background:#FF0000;color:#fff;display:flex;align-items:center;
+ justify-content:center;text-decoration:none;
+ box-shadow:0 2px 8px rgba(0,0,0,.2);z-index:2;
+ transition:transform .18s,box-shadow .18s,background .18s;}
+.yt-link::before{content:"\25B6";font-size:12px;line-height:1;margin-left:2px;
+ font-family:"Noto Sans TC",sans-serif;}
+.yt-link:hover{transform:scale(1.15);background:#cc0000;
+ box-shadow:0 4px 16px rgba(255,0,0,.45);}
 .toc-num{flex-shrink:0;width:42px;height:42px;border-radius:50%;
  background:linear-gradient(135deg,var(--gold),var(--goldL));color:#fff;
  display:flex;align-items:center;justify-content:center;
@@ -320,6 +344,10 @@ a{color:inherit;text-decoration:none;}
 <a class="sb-item" href="#chapter-12"><span class="sb-circle">十二</span><span class="sb-label" data-wytext="ktaLg/rCgNfLncH8"></span></a>
 <a class="sb-item" href="#chapter-13"><span class="sb-circle">十三</span><span class="sb-label" data-wytext="k8Gkgez5jNHykvn5"></span></a>
 <a class="sb-item" href="#chapter-14"><span class="sb-circle">十四</span><span class="sb-label" data-wytext="kda2gczujdfKkOn8"></span></a>
+<div class="sb-divider"></div>
+<a class="sb-item sb-ext" href="https://weiwen0925.github.io/dazhidulun-6/" rel="noopener" target="_blank" title="第六卷"><span class="sb-circle sb-ext-circle">⟵</span><span class="sb-label" data-wytext="kvSageTX"></span></a>
+<a class="sb-item sb-ext" href="https://weiwen0925.github.io/dazhidulun-8/" rel="noopener" target="_blank" title="第八卷"><span class="sb-circle sb-ext-circle">⟶</span><span class="sb-label" data-wytext="kvSageTR"></span></a>
+<a class="sb-item sb-ext" href="https://weiwen0925.github.io/dazhidulun-0/" rel="noopener" target="_blank" title="大智度論門頁"><span class="sb-circle sb-ext-circle">⌂</span><span class="sb-label" data-wytext="nu+tjcH7"></span></a>
 </nav>
 </aside>
 <main class="main">
@@ -341,20 +369,20 @@ a{color:inherit;text-decoration:none;}
 <h2 class="toc-title" data-wytext="kMGQRIbhxkmN+eg="></h2>
 <div class="toc-desc" data-wytext="kNWBgNn5jeTTVa7CTsSwppO56py+5UG430mB8MSQ46zStu3U5PgNptZajeTTl+rni762z/CjkNKNhufoj8bkVYnu9cqDt5GG35G0+w=="></div>
 <div class="toc-grid">
-<a class="toc-card" href="#chapter-1"><span class="toc-num" data-wytext="k8Gt"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNn6jfrlVa7CTsmKtpOt6JCM/Ij944HP44vZwsi6rJKJ/g=="></span><span class="toc-sub" data-wytext="kN+ijcDigfL9nO3+Ts+3uZSx41nL3OSc38GAyPeQ8rLQt/LY1uHI7vqcwfaB/dpVrJoXyPOZkvyGg8ra"></span></span></a>
-<a class="toc-card" href="#chapter-2"><span class="toc-num" data-wytext="k8Oh"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNv2jfrlVa7CTsiImJKM7J2V7Yfiz4zu6onL2cWcuw=="></span><span class="toc-sub" data-wytext="ksaYgNzhjNHtk/TSibezyNSykOyhjOn9jNPwkMjSiZuayMyXV7uaRIT/wI3e4Yvezg=="></span></span></a>
-<a class="toc-card" href="#chapter-3"><span class="toc-num" data-wytext="k8Gk"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNnzjfrlVa7CTsuVmJOV3pym3InR443d/ojNw8WQrZ6W1J+K7w=="></span><span class="toc-sub" data-wytext="n/qQjMrxj+3FnOv6hoaPycuqV5ut8IP6/EmB/tSdxabQt/LW6+bIy8ee1fWD4cRVrJoXyPOZk8O5g8ra"></span></span></a>
-<a class="toc-card" href="#chapter-4"><span class="toc-num" data-wytext="kuK2"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgfrhjfrlVa7CTsuhmp6X/J6X64b/wY/nxA=="></span><span class="toc-sub" data-wytext="n9+mh+H7j9Prluz0iaiey/WAkOOpjMbZjs7vneTyipWaxdGxn/qQgvfNSKvTVYnwxsmOsJGa1w=="></span></span></a>
-<a class="toc-card" href="#chapter-5"><span class="toc-num" data-wytext="k8O5"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNvujfrlVa7CTsmPgJ6W95GL8oj95o3c/ovv6sS2p5C5xZ2V7Yfizw=="></span><span class="toc-sub" data-wytext="kv6Xg/Xlj/DakOH2ipW+y+6Wn/GqjeDwjuHWnevfi7GfDbSGV5yozIT/xY7P1Q=="></span></span></a>
-<a class="toc-card" href="#chapter-6"><span class="toc-num" data-wytext="kvyA"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgeTXjfrlVa7CTsqzjJ+2+Jyn+4TE34/s5YnF3w=="></span><span class="toc-sub" data-wytext="kNCXguHdgOHjkObqi5OAyuy1kfu7jMrsSKvTVYjN48i4gpOP4Fnv00Gf7cGB8MeSxY0="></span></span></a>
-<a class="toc-card" href="#chapter-7"><span class="toc-num" data-wytext="k8Gu"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNn5jfrlVa7CTsW4hJ6n3pyl84Tq5Y7+8YjNw8WQrZ6W1J+K7w=="></span><span class="toc-sub" data-wytext="kM++gvf9jdPrkOTzipWaxfmYn++EgentjfnpkvbxipW+xcqbn8eCjMzzSKvTVYnwxsiygJGa1w=="></span></span></a>
-<a class="toc-card" href="#chapter-8"><span class="toc-num" data-wytext="kvyG"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgeTRjfrlVa7CTsujk5O0/pCq74nR/o7I2Yn478istlbzwFnJ2fqe0tOBzceQw73fpfHVz/DL/Mad5uKAzeWT9oo="></span><span class="toc-sub" data-wytext="ksGGgczqjdPDneTyipW+y+6WkPemgNnzjvHDVa7CTsiyhZO02p6GxIT36Yzh3ova7g=="></span></span></a>
-<a class="toc-card" href="#chapter-9"><span class="toc-num" data-wytext="k8Cw"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNjnjfrlVa7CTsW/pJ6L3JyTyobW+YHs8ojN58uvipG//JyD/g=="></span><span class="toc-sub" data-wytext="k8GkgvndjcftkNbVhpiADbSGV5Gl7YnAw4za24vZ/w31mlbU09DK+N1aqt5EkOndipW0yt2Rk8Ohgez7jezPksP1"></span></span></a>
-<a class="toc-card" href="#chapter-10"><span class="toc-num" data-wytext="kvSs"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jfrlVa7CTsmKtpO0/p2VyYnd6IHD1orS5Q=="></span><span class="toc-sub" data-wytext="nv6mgennjfrlkdTYiLmJyPO4V7uaRITh84Dj+IvQ8MWOslbzwFnI4cme0OqD3sw="></span></span></a>
-<a class="toc-card" href="#chapter-11"><span class="toc-num" data-wytext="kvSsgNn6"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jNHkkP/0Tu+ADZ6525GmwYfu1ozh/IjNw8WQrZ6W1J+K7w=="></span><span class="toc-sub" data-wytext="n8OGgen8jv3akOn8hqWwxO2onv6ggfT1j8TwVa7CTsiyhZKL456GxA=="></span></span></a>
-<a class="toc-card" href="#chapter-12"><span class="toc-num" data-wytext="kvSsgNv2"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jNPokP/0Tu+ADZKM7Jyo7YXCxYHD9YnayMqslZ6P2JGA7Q=="></span><span class="toc-sub" data-wytext="kvykgvn0gejpkunSibezyc64ksiJjN/VgMTtVa7CTsiyhZKL456GxIT36Yzh3ova7g=="></span></span></a>
-<a class="toc-card" href="#chapter-13"><span class="toc-num" data-wytext="kvSsgNnz"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jNHtkP/0Tu+ADZKJ/pyg54XC/o7x+YT96cmKtpO0/p+5+YT2/g=="></span><span class="toc-sub" data-wytext="kvykgvn0je7enO37iLCGy+CIkt+vguDojtvXk97siYC+yc6nkOyhRKPNSI3e4YnRycimkJ+Q+1nv00Gf7cGB8MeSxY0="></span></span></a>
-<a class="toc-card" href="#chapter-14"><span class="toc-num" data-wytext="kvSsgfrh"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jfL/kP/0Tu+ADZCe7JyA8ITExozh/Ey32Q3erPvW2+jJ3eqf0s+M8ceT3bjQk98="></span><span class="toc-sub" data-wytext="k8S2gs7hjcTwkvbziYGmy+KPkvykRKPNSIDl+IvZ/8iNi5613Fnv00Gf7cGAz/iSxY0="></span></span></a>
+<div class="toc-cell"><a class="toc-card" href="#chapter-1"><span class="toc-num" data-wytext="k8Gt"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNn6jfrlVa7CTsmKtpOt6JCM/Ij944HP44vZwsi6rJKJ/g=="></span><span class="toc-sub" data-wytext="kN+ijcDigfL9nO3+Ts+3uZSx41nL3OSc38GAyPeQ8rLQt/LY1uHI7vqcwfaB/dpVrJoXyPOZkvyGg8ra"></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/z_eSX8ec_f8" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-2"><span class="toc-num" data-wytext="k8Oh"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNv2jfrlVa7CTsiImJKM7J2V7Yfiz4zu6onL2cWcuw=="></span><span class="toc-sub" data-wytext="ksaYgNzhjNHtk/TSibezyNSykOyhjOn9jNPwkMjSiZuayMyXV7uaRIT/wI3e4Yvezg=="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/qwoAAwb6JS4" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-3"><span class="toc-num" data-wytext="k8Gk"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNnzjfrlVa7CTsuVmJOV3pym3InR443d/ojNw8WQrZ6W1J+K7w=="></span><span class="toc-sub" data-wytext="n/qQjMrxj+3FnOv6hoaPycuqV5ut8IP6/EmB/tSdxabQt/LW6+bIy8ee1fWD4cRVrJoXyPOZk8O5g8ra"></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/7fNZn31_eb4" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-4"><span class="toc-num" data-wytext="kuK2"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgfrhjfrlVa7CTsuhmp6X/J6X64b/wY/nxA=="></span><span class="toc-sub" data-wytext="n9+mh+H7j9Prluz0iaiey/WAkOOpjMbZjs7vneTyipWaxdGxn/qQgvfNSKvTVYnwxsmOsJGa1w=="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/Ve3YMrh58HU" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-5"><span class="toc-num" data-wytext="k8O5"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNvujfrlVa7CTsmPgJ6W95GL8oj95o3c/ovv6sS2p5C5xZ2V7Yfizw=="></span><span class="toc-sub" data-wytext="kv6Xg/Xlj/DakOH2ipW+y+6Wn/GqjeDwjuHWnevfi7GfDbSGV5yozIT/xY7P1Q=="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/xkrPfp_L_Lw" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-6"><span class="toc-num" data-wytext="kvyA"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgeTXjfrlVa7CTsqzjJ+2+Jyn+4TE34/s5YnF3w=="></span><span class="toc-sub" data-wytext="kNCXguHdgOHjkObqi5OAyuy1kfu7jMrsSKvTVYjN48i4gpOP4Fnv00Gf7cGB8MeSxY0="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/Izf2KAs49UA" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-7"><span class="toc-num" data-wytext="k8Gu"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNn5jfrlVa7CTsW4hJ6n3pyl84Tq5Y7+8YjNw8WQrZ6W1J+K7w=="></span><span class="toc-sub" data-wytext="kM++gvf9jdPrkOTzipWaxfmYn++EgentjfnpkvbxipW+xcqbn8eCjMzzSKvTVYnwxsiygJGa1w=="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/1-XEzf3cgkk" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-8"><span class="toc-num" data-wytext="kvyG"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgeTRjfrlVa7CTsujk5O0/pCq74nR/o7I2Yn478istlbzwFnJ2fqe0tOBzceQw73fpfHVz/DL/Mad5uKAzeWT9oo="></span><span class="toc-sub" data-wytext="ksGGgczqjdPDneTyipW+y+6WkPemgNnzjvHDVa7CTsiyhZO02p6GxIT36Yzh3ova7g=="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/6oAfkGPgcS4" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-9"><span class="toc-num" data-wytext="k8Cw"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgNjnjfrlVa7CTsW/pJ6L3JyTyobW+YHs8ojN58uvipG//JyD/g=="></span><span class="toc-sub" data-wytext="k8GkgvndjcftkNbVhpiADbSGV5Gl7YnAw4za24vZ/w31mlbU09DK+N1aqt5EkOndipW0yt2Rk8Ohgez7jezPksP1"></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/3m_TO-HiGok" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-10"><span class="toc-num" data-wytext="kvSs"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jfrlVa7CTsmKtpO0/p2VyYnd6IHD1orS5Q=="></span><span class="toc-sub" data-wytext="nv6mgennjfrlkdTYiLmJyPO4V7uaRITh84Dj+IvQ8MWOslbzwFnI4cme0OqD3sw="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/9E9NEiilRp8" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-11"><span class="toc-num" data-wytext="kvSsgNn6"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jNHkkP/0Tu+ADZ6525GmwYfu1ozh/IjNw8WQrZ6W1J+K7w=="></span><span class="toc-sub" data-wytext="n8OGgen8jv3akOn8hqWwxO2onv6ggfT1j8TwVa7CTsiyhZKL456GxA=="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/XGnlgeEgBVA" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-12"><span class="toc-num" data-wytext="kvSsgNv2"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jNPokP/0Tu+ADZKM7Jyo7YXCxYHD9YnayMqslZ6P2JGA7Q=="></span><span class="toc-sub" data-wytext="kvykgvn0gejpkunSibezyc64ksiJjN/VgMTtVa7CTsiyhZKL456GxIT36Yzh3ova7g=="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/ndd6HYIYOrs" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-13"><span class="toc-num" data-wytext="kvSsgNnz"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jNHtkP/0Tu+ADZKJ/pyg54XC/o7x+YT96cmKtpO0/p+5+YT2/g=="></span><span class="toc-sub" data-wytext="kvykgvn0je7enO37iLCGy+CIkt+vguDojtvXk97siYC+yc6nkOyhRKPNSI3e4YnRycimkJ+Q+1nv00Gf7cGB8MeSxY0="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/Pe-0RMlQKxc" rel="noopener" target="_blank"></a></div>
+<div class="toc-cell"><a class="toc-card" href="#chapter-14"><span class="toc-num" data-wytext="kvSsgfrh"></span><span class="toc-text"><span class="toc-name" data-wytext="kNWBgez7jfL/kP/0Tu+ADZCe7JyA8ITExozh/Ey32Q3erPvW2+jJ3eqf0s+M8ceT3bjQk98="></span><span class="toc-sub" data-wytext="k8S2gs7hjcTwkvbziYGmy+KPkvykRKPNSIDl+IvZ/8iNi5613Fnv00Gf7cGAz/iSxY0="></span></span></a><a aria-label="觀看影片解說" class="yt-link" href="https://youtu.be/ZIwUoG1F5mw" rel="noopener" target="_blank"></a></div>
 </div>
 </div>
 <section class="chapter" id="chapter-1">
