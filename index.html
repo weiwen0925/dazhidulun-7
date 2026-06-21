@@ -206,24 +206,39 @@ a{color:inherit;text-decoration:none;}
  opacity:0;pointer-events:none;transition:opacity .3s;}
 #backTop.show{opacity:1;pointer-events:auto;}
 
-/* ── 本品影音浮動鈕（隨閱讀品自動切換） ── */
+/* ── 本品影音浮動鈕（暗金漸層 · 與版面共調） ── */
 .yt-floater{position:fixed;right:22px;bottom:78px;z-index:122;
- display:flex;align-items:center;gap:9px;padding:10px 18px;
- background:linear-gradient(135deg,#FF0000,#cc0000);color:#fff;
+ display:flex;align-items:center;gap:10px;padding:10px 20px 10px 13px;
+ background:linear-gradient(135deg,#3d3225 0%,#1e1a14 55%,#2a2218 100%);
+ color:var(--goldL);
+ border:1px solid rgba(184,134,11,.5);
  border-radius:30px;text-decoration:none;
- font-family:"Noto Sans TC",sans-serif;font-size:13.5px;letter-spacing:2.5px;
- box-shadow:0 4px 16px rgba(255,0,0,.32);
+ font-family:"Noto Sans TC",sans-serif;font-size:13.5px;letter-spacing:3px;
+ font-weight:500;
+ box-shadow:0 4px 18px rgba(30,26,20,.42),
+   inset 0 0 0 1px rgba(184,134,11,.12),
+   inset 0 1px 0 rgba(212,168,75,.18);
  opacity:0;pointer-events:none;transform:translateY(20px);
- transition:opacity .3s,transform .3s,box-shadow .2s,background .25s;
+ transition:opacity .3s,transform .3s,box-shadow .25s,color .25s,border-color .25s;
  will-change:opacity,transform;}
 .yt-floater.show{opacity:1;pointer-events:auto;transform:translateY(0);}
-.yt-floater:hover{background:linear-gradient(135deg,#cc0000,#a30000);
- box-shadow:0 7px 24px rgba(255,0,0,.5);transform:translateY(-2px);}
+.yt-floater:hover{color:#f4ead2;
+ border-color:rgba(212,168,75,.85);
+ box-shadow:0 7px 26px rgba(30,26,20,.55),
+   0 0 0 2px rgba(184,134,11,.18),
+   inset 0 0 0 1px rgba(212,168,75,.3),
+   inset 0 1px 0 rgba(212,168,75,.32);
+ transform:translateY(-2px);}
+.yt-floater:hover .ytf-icon{background:linear-gradient(135deg,var(--gold),var(--goldL));
+ color:#1e1a14;box-shadow:0 0 12px rgba(212,168,75,.55);}
 .ytf-icon{display:inline-flex;align-items:center;justify-content:center;
- width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.18);
- font-size:10px;line-height:1;}
-.ytf-icon::before{content:"\25B6";margin-left:1px;}
-.ytf-text{white-space:nowrap;font-weight:500;}
+ width:24px;height:24px;border-radius:50%;
+ background:rgba(184,134,11,.22);
+ border:1px solid rgba(212,168,75,.4);
+ color:var(--goldL);font-size:9.5px;line-height:1;
+ transition:background .25s,color .25s,box-shadow .25s;}
+.ytf-icon::before{content:"\25B6";margin-left:2px;}
+.ytf-text{white-space:nowrap;}
 
 /* ── 頁尾 ── */
 .site-footer{background:var(--headGrad);color:#bda981;text-align:center;
