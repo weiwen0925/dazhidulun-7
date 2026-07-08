@@ -1285,5 +1285,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C7P7:END-->
+<!--WY-C7P8:BEGIN-->
+<style id="wy-c7p8-css">
+.c7p8-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c7p8-fabbox.show{display:block;}
+.c7p8-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c7p8-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c7p8-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c7p8-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c7p8-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c7p8-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c7p8-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c7p8-modal.open{display:flex;}
+.c7p8-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c7p8-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c7p8-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c7p8-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c7p8-close:hover{background:#e3d5b8;}
+.c7p8-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c7p8-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c7p8-tbl th,.c7p8-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c7p8-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c7p8-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c7p8-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c7p8-tbl b{color:#8b2500;}
+.c7p8-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c7p8-note b{color:#8b2500;}
+@media(max-width:900px){.c7p8-fabbox{right:14px;}.c7p8-tbl{font-size:11.5px;}.c7p8-card{padding:26px 14px 16px;}}
+</style>
+<div class="c7p8-fabbox" id="c7p8Box"><button class="c7p8-btn" id="c7p8Btn" type="button" aria-label="開啟全景總表"><span class="c7p8-ic">▦</span><span class="c7p8-ls"><span class="c7p8-l1">本品 · 三昧王三昧</span><span class="c7p8-l2">中觀四柱 · 事相觀行果位</span></span></button></div><div class="c7p8-modal" id="c7p8Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c7p8-card"><button class="c7p8-close" id="c7p8Close" type="button" aria-label="關閉">×</button><h3>卷七·第八品 放光釋論第十四 · 全景總表</h3><p class="sub">卷七・第八品｜自敷師子座結加趺坐三昧王三昧・中觀四柱・事相觀行果位三階梯・智不守常待緣而顯</p><table class="c7p8-tbl"><caption>一、中觀四柱與三階梯敘事（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>經文起點</td><td>「世尊自敷師子座，結加趺坐，直身繫念在前，入三昧王三昧，一切三昧悉入其中」——四段問答由此展開</td></tr><tr><td>中觀四柱</td><td>無自性（破實有相）·緣起（因緣相依法不孤起）·中道（離常斷苦樂兩邊）·二諦（假名安立與第一義空交集）</td></tr><tr><td>三階梯</td><td>事相（現象界：座與名相）→觀行（實踐界：結加趺坐身心中道）→果位（本體界：三昧王三昧）</td></tr><tr><td>自敷師子座之問</td><td>侍者菩薩具足，何以自敷？答「佛所化成、佛心化作」——座非物理實體而是佛心法界變現</td></tr><tr><td>何以名師子座之問</td><td>三重死局（實師子？神通變化？金銀木石？）皆非；答「<b>是號名師子，非實師子也</b>」，佛為人中師子故名</td></tr><tr><td>事相破執結論</td><td>空間（不依侍者亦不落實體勞動）與名相（不執實獸相而依德性假名安立）——不住生滅的中道大自在</td></tr></tbody></table><table class="c7p8-tbl"><caption>二、觀行中道與果位王義（本品進階）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>結加趺坐之問</td><td>何以唯用此坐？答「<b>最安隱，不疲極</b>」——離放逸（躺臥昏沉）與苦行（翹足常立）兩邊之身體中道</td></tr><tr><td>身心連動法則</td><td>「何以故直身？心易正故」——心無自性故受形體緣起影響，調身為調心無法繞過的前置條件，直身→心正→繫念三環相扣</td></tr><tr><td>不動之偈</td><td>「見畫加趺坐，魔王亦愁怖」——不動是性空無礙在身體層次的最高展現，魔懼的正是無懈可乘的安坐</td></tr><tr><td>三昧王之名</td><td>如人中王、轉輪聖王、諸佛於天上天下，三層比喻收束「王」——非武斷主宰而是「最第一自在」的品質</td></tr><tr><td>世俗諦·第四禪</td><td>三昧王三昧「在第四禪中」——唯第四禪無災患（不同初二三禪之火水風患）亦無波動（無動·捨念清淨），好寶物置好藏</td></tr><tr><td>勝義諦·一相無相</td><td>「一切諸佛法，一相無相」——萬流歸海，正因無相無自性，故沒有排斥邊界，能令一切三昧悉入其中</td></tr></tbody></table><table class="c7p8-tbl"><caption>三、全知悖論、善巧方便與中觀統攝（本品收束）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>全知何須入定</td><td>答「欲明智慧從因緣生故，止外道六師輩言我等智慧常有常知」——心如明鏡，入則知不入不知，非能力增減</td></tr><tr><td>佛力減劣之疑</td><td>答「應念即得，不以為難」——入定非不得已而是善巧示現：防譏嫌（免被疑為幻力龍神）、顯殊特（放最上等光明）</td></tr><tr><td>無依無緣</td><td>十住菩薩亦不能測知佛心何所依緣——正因無依無緣（絕對空性），故攝受力無有邊界，此非隱藏而是空性之自然結果</td></tr><tr><td>各各相如何悉入</td><td>如山上觀下——不抹殺諸山差異卻能一覽無遺；因諸法無自性，故大空能攝受萬有，一得一切得</td></tr><tr><td>四柱對位</td><td>座（無自性）·名（假名二諦）·坐（中道）·定（緣起智不守常）——四段經文如四根柱子撐起中觀世界觀</td></tr><tr><td>核心心法</td><td><b>智不守常，待緣而顯</b>——神通不否認，卻排斥視為造物主式獨立實體，一切能力展現皆為適大眾、防譏嫌、斷疑情的緣起大悲</td></tr></tbody></table><p class="c7p8-note">第八品題為「放光釋論」，全品卻幾乎不談光，而是藉佛陀入定前的尋常威儀——自敷座、結加趺坐、入三昧王三昧——演示般若中觀的根本法則。事相層破空間執（座是佛心變現）與名相執（師子是假名安立）；觀行層以「最安隱不疲極」的結加趺坐揭示身心一如的緣起法則；果位層以「智不守常，待緣而顯」六字收束全品心法：全知非常知而是因緣生，入定非力弱而是善巧防譏顯特，悉入其中非物理塞入而是視角降維涵攝。大悲無託，法無定相；不為諸相所礙，方為萬法之王——唯有徹底透視緣起性空，方能於一切法中得最第一自在。</p></div></div>
+<script id="wy-c7p8-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c7p8Btn"),BOX=document.getElementById("c7p8Box"),MODAL=document.getElementById("c7p8Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=7;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c7p8Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C7P8:END-->
 </body>
 </html>
