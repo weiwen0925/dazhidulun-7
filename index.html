@@ -1073,5 +1073,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C7P3:END-->
+<!--WY-C7P4:BEGIN-->
+<style id="wy-c7p4-css">
+.c7p4-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c7p4-fabbox.show{display:block;}
+.c7p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c7p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c7p4-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c7p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c7p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c7p4-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c7p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c7p4-modal.open{display:flex;}
+.c7p4-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c7p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c7p4-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c7p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c7p4-close:hover{background:#e3d5b8;}
+.c7p4-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c7p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c7p4-tbl th,.c7p4-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c7p4-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c7p4-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c7p4-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c7p4-tbl b{color:#8b2500;}
+.c7p4-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c7p4-note b{color:#8b2500;}
+@media(max-width:900px){.c7p4-fabbox{right:14px;}.c7p4-tbl{font-size:11.5px;}.c7p4-card{padding:26px 14px 16px;}}
+</style>
+<div class="c7p4-fabbox" id="c7p4Box"><button class="c7p4-btn" id="c7p4Btn" type="button" aria-label="開啟全景總表"><span class="c7p4-ic">▦</span><span class="c7p4-ls"><span class="c7p4-l1">本品 · 斷見纏煩惱</span><span class="c7p4-l2">解構漏斗 · 無自性故能斷</span></span></button></div><div class="c7p4-modal" id="c7p4Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c7p4-card"><button class="c7p4-close" id="c7p4Close" type="button" aria-label="關閉">×</button><h3>卷七·第四品 斷見纏煩惱 · 全景總表</h3><p class="sub">卷七・第四品｜能斷種種見纏煩惱・見纏煩惱三層漏斗・六十二見百八煩惱・無自性故能斷・夢境公案</p><table class="c7p4-tbl"><caption>一、解構漏斗：見、纏、煩惱三層架構（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>經文種子</td><td>「<b>能斷種種見、纏及諸煩惱</b>」——「種種」暗示對象非單一固定實體，而是無量增殖變動的網絡</td></tr><tr><td>認知層·見</td><td>常見（見五眾常）與斷見（見五眾滅）二種根本謬誤，皆假定五蘊為可判定「常斷」的實在對象</td></tr><tr><td>現象層·纏</td><td>十纏（瞋覆罪睡眠戲掉無慚無愧慳嫉）——見所凝結之結果，煩惱結繞心故盡名為纏</td></tr><tr><td>根源層·煩惱</td><td>「能令心煩，能作惱故」——內著（五見疑慢）外著（婬瞋）二種，無明貫通其間，三毒為根本</td></tr><tr><td>菩薩能斷雙重結構</td><td>「自斷此二，亦能除一切眾生二見，令處中道」——菩薩不站在被斷網絡之外，自悟即是眾生解脫之路</td></tr></tbody></table><table class="c7p4-tbl"><caption>二、見的邏輯展開與煩惱的窮盡分類</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>四句破</td><td>世間常／無常／亦常亦無常／非常非無常——同構應用於我及世間有邊無邊、死後如去不如去三維度</td></tr><tr><td>碎形增殖</td><td>五見（身邊邪見取戒取）→種種因緣生、種種智門觀、種種師邊聞，三軸相乘至六十二見</td></tr><tr><td>數量辯證</td><td>九結七使合為九十八結，加十纏為<b>百八煩惱</b>（《迦旃延子阿毘曇》）；犢子部則計「五百」——數目皆象徵無量</td></tr><tr><td>見之本質</td><td>緣起性空——種種因緣生、種種智門觀、緣盡則散，故「能斷」即是洞見本無實質可斷</td></tr><tr><td>中觀第二層揭露</td><td>見纏煩惱皆可擴為無量，其「無量性」恰恰證明其無自性——若有固定本質即不可能無限變異</td></tr></tbody></table><table class="c7p4-tbl"><caption>三、中觀反詰、夢境公案與能斷重塑（本品收束）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>數字的陷阱</td><td>若煩惱有自性，本質應如金堅、如火熱般永恆不可毀滅，則「斷煩惱」與「自性不變」自相矛盾</td></tr><tr><td>無自性故能斷</td><td>正因煩惱無自性、緣因緣所成，方能被般若智慧觀照而自然瓦解，如光照暗、如繩結解而繩仍在</td></tr><tr><td>三男三妓夢境公案</td><td>三人晝夜專念婬女竟於夢中遂事，醒悟「彼女不來，我亦不往，而婬事得辦」——因是而悟「一切諸法皆如是耶」</td></tr><tr><td>颰陀婆羅印可</td><td>「<b>諸法實爾，皆從念生</b>」——巧方便為三人說諸法空，三人即得阿鞞跋致，即得二字顯無自性覺悟之當下瓦解</td></tr><tr><td>三種能斷</td><td>世俗（暴力斷滅，落斷見）·過渡（持戒禪觀漸削）·中觀（般若體悟無自性，無斷之斷）</td></tr><tr><td>涉凡不染</td><td>菩薩自斷、為他斷、圓滿能斷三重結構——如蓮處泥，於百八煩惱中示現空性，是名能斷種種見纏煩惱</td></tr></tbody></table><p class="c7p4-note">第四品由一句十一字經文，展開整部《大智度論》對「執著」結構最徹底的解剖：見是認知層戲論網絡、纏是現象層黏著機制、煩惱是根源層心理驅動，三層漏斗層層下沉，收束於「無自性故能斷」的中觀轉向。龍樹先以阿毘達磨窮盡分類將煩惱數成百八、五百，再反詰「若煩惱有自性，何以能斷」，摧毀將執著實體化的陷阱；三男三妓的夢境公案則以最強烈的欲望為例，示現「諸法從念生、無有自性」如何在一念覺悟間當下瓦解。能斷者，非斷非不斷——斷的是執著的錯覺，不斷的是緣起的妙用，於百八煩惱中，照見無可斷。</p></div></div>
+<script id="wy-c7p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c7p4Btn"),BOX=document.getElementById("c7p4Box"),MODAL=document.getElementById("c7p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c7p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C7P4:END-->
 </body>
 </html>
