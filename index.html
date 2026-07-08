@@ -1126,5 +1126,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C7P4:END-->
+<!--WY-C7P5:BEGIN-->
+<style id="wy-c7p5-css">
+.c7p5-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c7p5-fabbox.show{display:block;}
+.c7p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c7p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c7p5-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c7p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c7p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c7p5-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c7p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c7p5-modal.open{display:flex;}
+.c7p5-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c7p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c7p5-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c7p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c7p5-close:hover{background:#e3d5b8;}
+.c7p5-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c7p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c7p5-tbl th,.c7p5-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c7p5-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c7p5-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c7p5-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c7p5-tbl b{color:#8b2500;}
+.c7p5-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c7p5-note b{color:#8b2500;}
+@media(max-width:900px){.c7p5-fabbox{right:14px;}.c7p5-tbl{font-size:11.5px;}.c7p5-card{padding:26px 14px 16px;}}
+</style>
+<div class="c7p5-fabbox" id="c7p5Box"><button class="c7p5-btn" id="c7p5Btn" type="button" aria-label="開啟全景總表"><span class="c7p5-ic">▦</span><span class="c7p5-ls"><span class="c7p5-l1">本品 · 遊戲三昧</span><span class="c7p5-l2">百千三昧 · 入住出三種自在</span></span></button></div><div class="c7p5-modal" id="c7p5Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c7p5-card"><button class="c7p5-close" id="c7p5Close" type="button" aria-label="關閉">×</button><h3>卷七·第五品 中觀視野下的遊戲三昧 · 全景總表</h3><p class="sub">卷七・第五品｜遊戲出生百千三昧・大悲無量方便無量・性空緣起中道・師子無畏・入住出三自在</p><table class="c7p5-tbl"><caption>一、經典現象與百千三昧的必要性（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>三詞釋義</td><td>遊戲（自在無礙非散亂）·出生（正在開發修證非圓滿已成）·百千三昧（無窮多樣對應眾生無量煩惱無量）</td></tr><tr><td>三昧定義</td><td>「<b>善心一處住不動</b>」——善的專注力，非逃避，是有質地有方向的精神集中</td></tr><tr><td>菩薩中間定位</td><td>「於佛三昧中未滿，勤行勤修故言能出生」——菩薩道非坐以待成，而是主動創造性的修行過程</td></tr><tr><td>數量之問</td><td>「眾生無量，心行不同，有利有鈍，於諸結使有厚有薄」——四維異質性要求菩薩備齊百千三昧斷其塵勞</td></tr><tr><td>大富治病二喻</td><td>備種種財物方能濟諸貧者、備種種眾藥方能廣治諸病——單一解方無法對治多元匱乏或病症</td></tr><tr><td>核心心法</td><td><b>大悲無量，故方便無量</b>——悲心無邊界則方便無窮，以眾生需求為導向而非自我成就導向</td></tr></tbody></table><table class="c7p5-tbl"><caption>二、中觀建構——病空與藥空的雙重根據</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>病空·性空</td><td>煩惱無定相——貪心所著因人而異、隨條件而變，不可能有「一種絕對標準的萬靈丹」對治所有煩惱</td></tr><tr><td>病空·緣起</td><td>特定煩惱類型（因）配對應三昧（緣）得斷除之果——對症下藥是法界本身的必然法則，非任意選擇</td></tr><tr><td>病空·中道</td><td>病亦空、藥亦空，卻能積極運用百千三昧廣度眾生——不落執病為實之宿命論，亦不落執藥為實之法執</td></tr><tr><td>「戲」之重新定義</td><td>菩薩之戲是「<b>欣樂出入自在</b>」，非結愛戲；師子在鹿中自在無畏，非力量而是對自身本性的清晰認識</td></tr><tr><td>餘人之偏限</td><td>入住出三種自在中，餘人至多兼得二種（如自在入住卻不能自在出，即聲聞獨覺的典型困境——法執於定樂）</td></tr><tr><td>菩薩三種自在</td><td>自在入（隨眾生需求入定）·自在住（保持利他心）·自在出（隨時出定度眾）——三者無縫循環</td></tr></tbody></table><table class="c7p5-tbl"><caption>三、藥空與統一原理（本品收束）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>藥空·法空</td><td>三昧亦無自性——定境無實體能困住心識，菩薩了知定境如幻如化，故能自在入住出而不被吸入黏著</td></tr><tr><td>病空藥空對稱</td><td>病空使「對治」成為可能（第三章）、藥空使「自在」成為可能（第五章）——兩重空性缺一不可</td></tr><tr><td>破除愛見</td><td>不落執有（結愛戲・貪愛五欲）、不落執無（沈空滯寂・耽溺法樂不出度生）——「非結愛戲」即中道宣言</td></tr><tr><td>無所得</td><td>師子無畏的哲學根基——心無罣礙、無有恐怖，不怕得不到更高定、不怕失去已證定，故視百千三昧如遊戲</td></tr><tr><td>大悲緣起與般若性空二支柱</td><td>大悲涉入緣起世間備百千三昧（涉入有）＋般若徹了病空藥空無所得（安住於無）——兩極缺一不可</td></tr><tr><td>全品結語</td><td>大悲涉有方便廣，般若契空無所得；入住出中無罣礙，師子鹿中自在身</td></tr></tbody></table><p class="c7p5-note">第五品以「遊戲出生百千三昧」八字，展開一套上升邏輯：現象（菩薩正勤修無量三昧）→第一重辯證（大悲無量故方便無量，回答數量問題）→第一重中觀建構（病空：性空保證多樣性、緣起指明必然性、中道超越執著）→第二重辯證（入住出三種自在，回答性質問題）→第二重中觀建構（藥空：三昧亦無自性，故能被超越）。兩重空性缺一不可：唯觀病空而不觀藥空，縱能對治煩惱仍會被自己所修法門綁架；唯二者統一，百千三昧的精密方法論與遊戲自在的最高解脫，方能合為一體。師子在鹿群中不染不著而眾生得度，正是大悲緣起與般若性空合一的菩薩道實踐。</p></div></div>
+<script id="wy-c7p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c7p5Btn"),BOX=document.getElementById("c7p5Box"),MODAL=document.getElementById("c7p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c7p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C7P5:END-->
 </body>
 </html>
