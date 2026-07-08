@@ -1338,5 +1338,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C7P8:END-->
+<!--WY-C7P9:BEGIN-->
+<style id="wy-c7p9-css">
+.c7p9-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c7p9-fabbox.show{display:block;}
+.c7p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c7p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c7p9-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c7p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c7p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c7p9-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c7p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c7p9-modal.open{display:flex;}
+.c7p9-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c7p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c7p9-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c7p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c7p9-close:hover{background:#e3d5b8;}
+.c7p9-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c7p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c7p9-tbl th,.c7p9-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c7p9-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c7p9-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c7p9-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c7p9-tbl b{color:#8b2500;}
+.c7p9-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c7p9-note b{color:#8b2500;}
+@media(max-width:900px){.c7p9-fabbox{right:14px;}.c7p9-tbl{font-size:11.5px;}.c7p9-card{padding:26px 14px 16px;}}
+</style>
+<div class="c7p9-fabbox" id="c7p9Box"><button class="c7p9-btn" id="c7p9Btn" type="button" aria-label="開啟全景總表"><span class="c7p9-ic">▦</span><span class="c7p9-ls"><span class="c7p9-l1">本品 · 舉身微笑</span><span class="c7p9-l2">二諦圓融 · 真俗肉身實證</span></span></button></div><div class="c7p9-modal" id="c7p9Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c7p9-card"><button class="c7p9-close" id="c7p9Close" type="button" aria-label="關閉">×</button><h3>卷七·第九品 舉身微笑 · 全景總表</h3><p class="sub">卷七・第九品｜三昧安庠而起天眼觀世舉身微笑・二諦圓融緣起無自性性空實相・負草入火</p><table class="c7p9-tbl"><caption>一、起定觀世與擇用天眼（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>經文起點</td><td>「世尊從三昧安庠而起，以天眼觀視世界，舉身微笑」——三個動作節點：動靜之際、視角之擇、身相之異</td></tr><tr><td>起定觀世之問</td><td>入三昧無所施作，何以從定起觀世？答四步推演：內觀法財→外觀眾生→確立潛能（因緣得）→看見荒謬而笑</td></tr><tr><td>二諦圓融</td><td>入定是安住勝義諦（無所施作）、出定是回到世俗諦（觀視大悲）——靜與動絕非矛盾，而是以空導有的圓滿展現</td></tr><tr><td>擇用天眼之問</td><td>佛眼慧眼法眼更勝，何以用天眼觀世？答五眼分工矩陣——佛眼法眼慧眼非見眾生法，觀眾生唯肉眼天眼二者</td></tr><tr><td>最佳適配推導</td><td>肉眼所見不遍，天眼緣世界眾生無障無礙——工具無高低金字塔，唯有緣起相應的最佳適配（大機大用降維適配）</td></tr><tr><td>釋天眼名三重邏輯</td><td>借名（功用相似非依生分）→隨順（佛隨人心）→翻轉（天有名天生天淨天，淨天之尊即佛，稱天眼亦無咎）</td></tr></tbody></table><table class="c7p9-tbl"><caption>二、一切身笑與希有難事（本品進階）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>天眼所見</td><td>眾生常求安樂而更得苦；心著吾我，是中實無吾我——如盲人求道反墮深坑，佛觀此顛倒故生大悲</td></tr><tr><td>一切身笑之問</td><td>笑從口生或眼生，何以言一切身笑？答境界層（心轉物，令一切身如口如眼）與現象層（口笑歡喜，一切毛孔皆開）</td></tr><tr><td>色身性空與身心緣起</td><td>器官無「只能是口」的絕對自性，正因色身性空方能突破定型；法喜為緣，牽動全身毛孔共振，身心緣起連動</td></tr><tr><td>至尊何以笑之問</td><td>大地不以無事及小因緣而動，佛亦如是——此次舉身大笑必有大因緣，非情緒展現</td></tr><tr><td>五層大因緣</td><td>續佛種（無央數眾生當續佛種）→同體悲（我世世曾作小蟲惡人）→小因大果（讚一偈稱一聲皆得作佛）→柔順眾生（因笑放光調心）→希有難事</td></tr><tr><td>負草入火之喻</td><td><b>持八萬法眾名字草，入諸法實相中，不為染著火所燒，直過無礙</b>——乾草（世俗語言）大火（勝義真空）不燒一葉（二諦圓融）</td></tr></tbody></table><table class="c7p9-tbl"><caption>三、中觀統攝與全品迴響（本品收束）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>五大節點對映</td><td>起定觀世→二諦圓融；擇用天眼→緣起無自性；一切身笑→性空實相；五輪問答收攝為同一套底層邏輯</td></tr><tr><td>即相離相</td><td>佛持世俗語言名字（乾草）毫不執著走入勝義真空火聚（大火），言語不燒著心，名相不粘於心，直過無礙</td></tr><tr><td>業力無自性</td><td>若業力有固定自性，小因永遠只能生小果；正因性空不生不滅無邊際，善因接上聞知實相之緣，善報得以無限放大</td></tr><tr><td>同體大悲的平視</td><td>佛坦言「我世世曾作小蟲惡人」，無絲毫傲慢——這一笑不是俯視而是平視與期許，你我本是同根，你也終將成佛</td></tr><tr><td>五則記憶口訣</td><td>法藏性空無自性皆從緣起非天生；優劣本空無自性隨順緣起適才用；隨順世俗立天眼究竟清淨名淨天；毛孔盡開笑滿身；二諦圓融草不燒</td></tr><tr><td>全品結語</td><td>舉身微笑既是無為的安住又是有為的慈悲，既是勝義空性又是世俗教化——中觀思想最溫暖的化身</td></tr></tbody></table><p class="c7p9-note">第九品以佛陀出定後「舉身微笑」一幕，展開五輪問答，把一段充滿畫面感的敘事精準對接《中論》硬核哲學：起定觀世示現二諦圓融（入定真諦、出定世俗）、擇用天眼示現緣起無自性（工具無高低唯有緣起相應）、一切身笑示現性空實相（色身無自性故可突破定型）。全品高潮在「負草入火」之喻——語言名字如乾草、諸法實相如大火，佛持名字草入實相火聚而不燒一葉，正是二諦圓融、真俗不二的終極展現。這一抹微笑，承載了佛陀對無量眾生的平等平視、對真理的透徹證悟，以及對假名俗諦不執不棄的圓融無礙，是中觀思想最溫暖的肉身實證。</p></div></div>
+<script id="wy-c7p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c7p9Btn"),BOX=document.getElementById("c7p9Box"),MODAL=document.getElementById("c7p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c7p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C7P9:END-->
 </body>
 </html>
