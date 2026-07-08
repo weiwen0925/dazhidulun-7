@@ -1020,5 +1020,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C7P2:END-->
+<!--WY-C7P3:BEGIN-->
+<style id="wy-c7p3-css">
+.c7p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c7p3-fabbox.show{display:block;}
+.c7p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c7p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c7p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c7p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c7p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c7p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c7p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c7p3-modal.open{display:flex;}
+.c7p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c7p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c7p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c7p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c7p3-close:hover{background:#e3d5b8;}
+.c7p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c7p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c7p3-tbl th,.c7p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c7p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c7p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c7p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c7p3-tbl b{color:#8b2500;}
+.c7p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c7p3-note b{color:#8b2500;}
+@media(max-width:900px){.c7p3-fabbox{right:14px;}.c7p3-tbl{font-size:11.5px;}.c7p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c7p3-fabbox" id="c7p3Box"><button class="c7p3-btn" id="c7p3Btn" type="button" aria-label="開啟全景總表"><span class="c7p3-ic">▦</span><span class="c7p3-ls"><span class="c7p3-l1">本品 · 梵天勸請</span><span class="c7p3-l2">請轉法輪 · 雙重防線息戲論</span></span></button></div><div class="c7p3-modal" id="c7p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c7p3-card"><button class="c7p3-close" id="c7p3Close" type="button" aria-label="關閉">×</button><h3>卷七·第三品 梵天勸請之中觀解構 · 全景總表</h3><p class="sub">卷七・第三品｜能請無量諸佛・請轉法輪請久住世・破三迷思・雙重防線・性空緣起破相中道二諦</p><table class="c7p3-tbl"><caption>一、雙重勸請與核心悖論（本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>請之二種</td><td>請轉法輪（佛初成道，菩薩六時禮請「為眾生轉法輪」）＋請久住世（佛欲入涅槃，菩薩六時禮請「久住無央數劫」）</td></tr><tr><td>兩個時間點</td><td>一守法能否開始流布（初成道）、一守法能否延續住世（入涅槃）——雙重勸請覆蓋佛法住世起訖</td></tr><tr><td>核心悖論</td><td>「<b>諸佛之法，法應說法廣度眾生，請與不請法自應爾，何以須請</b>」——機械因果與物理空間兩重預設陷阱</td></tr><tr><td>三重迷思</td><td>被動等待（請於事無補）、必然發生（成道即自動說法）、空間限制（十方不能親見何以可請）</td></tr><tr><td>破迷思一</td><td>國王美饍喻＋慈心觀喻——「<b>請者亦應得福，錄其心故</b>」，請法改變的是請者自身而非佛意</td></tr><tr><td>破迷思二</td><td>無人請者便入涅槃之實證（多寶佛、須扇多佛、釋尊五十七日寂不說法）——說法非機械必然</td></tr></tbody></table><table class="c7p3-tbl"><caption>二、雙重防線與中觀四維（本品進階）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>破迷思三</td><td>「佛常見其心亦聞彼請」＋「假令不聞不見，請亦有福」——請以心相應，破空間物理限制</td></tr><tr><td>防線一</td><td>避「執著於法」之譏——若不請而說，外道譏「體道常定，何以著法」，故須待請而後轉法輪</td></tr><tr><td>防線二</td><td>避「貪戀壽命」之譏——若不請而久住，人言「知諸法相不應貪壽」，故須待請而後住世</td></tr><tr><td>中道統合</td><td>「<b>諸佛不著不愛，為憐愍眾生故方便轉法輪</b>」——勝義不戲論（實與不實二不可得）、世俗大悲（有請便說）交會</td></tr><tr><td>息滅戲論</td><td>無請自說即「自顯自執法」須答十四難；有請則「但為斷老病死」，確立無戲論處</td></tr><tr><td>四維對應</td><td>性空（說法無定性）·緣起（勸請為增上緣）·破相（心念越十方）·中道二諦（無著與大悲統一）</td></tr></tbody></table><table class="c7p3-tbl"><caption>三、實踐行門與終極指向（本品收束）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>順應世俗</td><td>佛示現「大人法」不請不說，避外道譏；梵天親自勸請，亦達「降伏外道、外道心伏」之效</td></tr><tr><td>菩薩六時三事</td><td>懺悔（滅身口意惡業罪）＋隨喜（念諸佛及弟子眾功德）＋勸請（請轉法輪及久住世）——三事層層外擴</td></tr><tr><td>勸請之終極指向</td><td>發起請法之心→心量等同十方虛空→感應道交眾生獲益→功德無量轉近得佛</td></tr><tr><td>記憶口訣（破迷思）</td><td>說法無定性（性空）· 必須待人請（緣起）· 心念越十方（破相）</td></tr><tr><td>記憶口訣（息戲論）</td><td>佛證性空本無言（避著法譏）· 為斷老死不戲論（避十四難）· 梵天勸請因緣足（降外道）</td></tr><tr><td>中觀建築學</td><td>地基（破除物理空間與機械因果迷思）→雙柱（息滅戲論、順應世俗）→橫梁（中觀二諦）→塔頂（轉近得佛）</td></tr></tbody></table><p class="c7p3-note">本品由「能請無量諸佛」一句德相，展開一座完整的中觀建築：梵天勸請看似儀式性的細節，實則是龍樹演示「緣起性空」與「息滅戲論」的最高哲學實踐。請法不改變佛意，而改變請者自身——請者一念心的頻率，與佛之妙法相應感通。「請轉法輪」防「執著於法」之譏、「請久住世」防「貪戀壽命」之譏，二事恰是防堵兩種極端、導歸中道的雙重防線。佛心如鐘，叩之則鳴；大悲無著，隨緣而應——這聲「請」看似為佛而發，實則步步成就的，正是請法者自己的菩薩道。</p></div></div>
+<script id="wy-c7p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c7p3Btn"),BOX=document.getElementById("c7p3Box"),MODAL=document.getElementById("c7p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c7p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C7P3:END-->
 </body>
 </html>
