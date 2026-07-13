@@ -2583,5 +2583,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P10:END-->
+<!--WY-BH7P11:BEGIN-->
+<style id="wy-bh7p11-css">
+.bh7p11-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p11-fabbox.show{display:block;}
+.bh7p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p11-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p11-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p11-modal.open{display:flex;}
+.bh7p11-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p11-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p11-close:hover{background:#dde2e6;}
+.bh7p11-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p11-tbl th,.bh7p11-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p11-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p11-tbl thead th:nth-child(1){width:32%;}.bh7p11-tbl thead th:nth-child(2){width:41%;}.bh7p11-tbl thead th:nth-child(3){width:27%;}
+.bh7p11-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p11-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p11-guan{background:#eef2f5;color:#37505f;}
+.bh7p11-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p11-tbl tbody tr:nth-child(even) td.bh7p11-guan{background:#e8eef2;}
+.bh7p11-tbl tbody tr:nth-child(even) td.bh7p11-qa{background:#e7ecdb;}
+.bh7p11-tbl b{color:#8b2500;}
+.bh7p11-guan b{color:#2f6b5a;}
+.bh7p11-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p11-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p11-fabbox{right:14px;}.bh7p11-tbl{font-size:11px;}.bh7p11-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p11-fabbox" id="bh7p11Box"><button class="bh7p11-btn" id="bh7p11Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p11-ic">譯</span><span class="bh7p11-ls"><span class="bh7p11-l1">本品 · 原文·白話·中觀</span><span class="bh7p11-l2">白話翻譯表</span></span></button></div><div class="bh7p11-modal" id="bh7p11Modal" role="dialog" aria-modal="true"><div class="bh7p11-card"><button class="bh7p11-close" id="bh7p11Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第11品 白話翻譯表（身分放光）</h3><p class="sub">《大智度論》卷七‧第11品‧身分放光：佛陀身分二十餘處各各放六百萬億光明，論主以二輪問答追問「足光已遍照十方，何須身分再放」的空間階級之惑、與「依何三昧禪定而放此光」的定學根據 · 原文↔白話↔中觀概念對照（含二問二答）</p><table class="bh7p11-tbl"><caption>身分放光 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p11-src">足十指、兩踝、兩𨄔、兩膝、兩髀、腰、脊、腹、背、臍、心、胸德字、肩、臂、手十指、項、口、四十齒、鼻兩孔、兩眼、兩耳、白毫相、肉髻，各各放六百萬億光明。</td><td>從腳的十趾、雙踝、雙腨（小腿肚）、雙膝、雙髀（大腿）、腰、脊、腹、背、臍、心、胸前卍字、雙肩、雙臂、手的十指、頸項、口、四十齒、鼻孔、雙眼、雙耳、白毫相、頭頂肉髻——身上每一處，都各自放出六百萬億道光明。</td><td class="bh7p11-guan"><b>全身無量處放光——表法圓滿無死角</b>——經文一一列舉身上二十餘處部位皆各各放光，並非冗筆重複，而是鋪陳「圓滿、無礙、無死角」的極致場景，成為以下二輪問答層層追問的文本基座。</td></tr><tr><td class="bh7p11-qa">問曰：足下光明能照三千大千及十方世界，何用身分各各放六百萬億光明？</td><td>有人問：足下所放的光明，已經能照亮三千大千世界乃至十方世界，為什麼還要身上各處都各自放出六百萬億道光明呢？</td><td class="bh7p11-guan"><b>設疑：執一廢多的資源重疊論</b>——此問預設光明是有定量、會重疊的實有之物，誤以為足下一處放光已達究竟遍照，全身再放便屬多餘，是典型的線性、實有化思維。</td></tr><tr><td class="bh7p11-qa">答曰：我先言足下光明照下方，餘方不滿，是故更放身分光明。有人言：一切身分，足為立處故最大，餘不爾；是故佛初放足下六百萬億光明以示眾生。如三十二相中初種足下安住相，一切身分皆有神力。</td><td>回答說：我先前所說的足下光明，主要是照亮下方，其餘方向的光明並不飽滿，所以才又從其餘身分各處放出光明，以補足不足之處。也有人說：在一切身分之中，雙足是全身安立的根本，所以功能最大，其餘部位則不然；因此佛陀最初特意從足下放出六百萬億光明，以此開示眾生。這正如三十二相之中，最初所成就的便是「足下安住相」，可見一切身分之中皆具足神力，並無高下之別。</td><td class="bh7p11-guan"><b>破執：空間互補與大小無自性</b>——「餘方不滿」揭示足光與身光是立體互補而非平面重疊；「足為立處故最大」則翻轉頭尊足賤的世俗成見，指出功能標準一旦切換，卑下之處即成最大，正顯示大小尊卑本無自性、隨緣而立。</td></tr><tr><td class="bh7p11-qa">問曰：依何三昧、依何神通、何禪定中放此光明？</td><td>有人問：這光明究竟是依憑哪一種三昧、依憑哪一種神通、在哪一種禪定之中放出的呢？</td><td class="bh7p11-guan"><b>設疑：追問神通的操作規律</b>——此問不滿足於「有光明」的現象描述，進一步探求光明背後可依循、可驗證的定學機制，反映印度禪修傳統對修證『科學化』的追問。</td></tr><tr><td class="bh7p11-qa">答曰：三昧王三昧中放此光明，六通中如意通、四禪中第四禪放此光明。第四禪中火勝處、火一切入，此中放光明。復次，佛初生時、初成佛時、初轉法輪時皆放無量光明滿十方，何況說摩訶般若波羅蜜時而不放光？譬如轉輪聖王珠寶，常有光明照王軍眾，四邊各一由旬；佛亦如是，眾生緣故，若不入三昧，恒放常光。何以故？佛眾法寶成故。</td><td>回答說：這光明是在三昧王三昧之中放出的，是以六神通中的如意通、四禪之中的第四禪而放出的；更精確地說，是在第四禪的火勝處、火一切入這樣的觀法之中放出的。再者，佛陀最初出生時、最初成道時、最初轉法輪時，都曾放出無量光明遍滿十方，更何況是在宣說《摩訶般若波羅蜜》這樣的大法之時，怎麼可能不放光呢？譬如轉輪聖王所持的寶珠，經常散發光明照耀王的軍眾，四邊各及一由旬之遠；佛陀也是如此，為了眾生因緣的緣故，即使不特意入於三昧，也恆常放出常在的光明。這是為什麼呢？因為這是佛陀無量功德法寶所成就的緣故。</td><td class="bh7p11-guan"><b>破執與本體：從有為操作到無為常光</b>——先給出三昧王三昧、如意通、第四禪、火勝處等層層嵌套的精密定學公式，說明神通並非任意妄為；再以轉輪聖王珠寶為喻，指出縱不入三昧亦『恆放常光』，根源在於『佛眾法寶成故』——放光終究不是一時的技術操作，而是萬德圓滿的本體自然流現，收攝於緣起、無自性、二諦圓融的中道實相。</td></tr></tbody></table><p class="bh7p11-note">本品經文記佛身分各處（足十指乃至肉髻）各各放六百萬億光明。論主以二輪問答解惑：足光照下方餘方不滿、故更放身分光明以互補周遍，又足為立處故最大，破頭尊足賤之世俗成見；此光依三昧王三昧、如意通、第四禪、火勝處火一切入而放，然佛不入三昧亦恆放常光，以佛眾法寶成故。白話忠於原意、逐段對照（經在最頂，問在答前）。中觀關鍵詞：空間互補與大小尊卑無自性　從有為操作到無為常光的本體歸結</p></div></div>
+<script id="wy-bh7p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p11Btn"),BOX=document.getElementById("bh7p11Box"),MODAL=document.getElementById("bh7p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p11Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P11:END-->
 </body>
 </html>
