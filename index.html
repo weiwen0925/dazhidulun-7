@@ -2277,5 +2277,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P4:END-->
+<!--WY-BH7P5:BEGIN-->
+<style id="wy-bh7p5-css">
+.bh7p5-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p5-fabbox.show{display:block;}
+.bh7p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p5-modal.open{display:flex;}
+.bh7p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p5-close:hover{background:#dde2e6;}
+.bh7p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p5-tbl th,.bh7p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p5-tbl thead th:nth-child(1){width:32%;}.bh7p5-tbl thead th:nth-child(2){width:41%;}.bh7p5-tbl thead th:nth-child(3){width:27%;}
+.bh7p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p5-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p5-guan{background:#eef2f5;color:#37505f;}
+.bh7p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p5-tbl tbody tr:nth-child(even) td.bh7p5-guan{background:#e8eef2;}
+.bh7p5-tbl tbody tr:nth-child(even) td.bh7p5-qa{background:#e7ecdb;}
+.bh7p5-tbl b{color:#8b2500;}
+.bh7p5-guan b{color:#2f6b5a;}
+.bh7p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p5-fabbox{right:14px;}.bh7p5-tbl{font-size:11px;}.bh7p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p5-fabbox" id="bh7p5Box"><button class="bh7p5-btn" id="bh7p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p5-ic">譯</span><span class="bh7p5-ls"><span class="bh7p5-l1">本品 · 原文·白話·中觀</span><span class="bh7p5-l2">白話翻譯表</span></span></button></div><div class="bh7p5-modal" id="bh7p5Modal" role="dialog" aria-modal="true"><div class="bh7p5-card"><button class="bh7p5-close" id="bh7p5Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第5品 白話翻譯表（遊戲三昧釋論）</h3><p class="sub">《大智度論》卷七‧第5品‧遊戲三昧釋論：三昧定義分類、大富治病二喻、二問二答、獅子無畏之喻、入住出三種自在 · 原文↔白話↔中觀概念 逐段對照（含問答）</p><table class="bh7p5-tbl"><caption>遊戲三昧釋論 · 原文｜白話翻譯｜中觀概念（共12段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p5-src">遊戲出生百千三昧。</td><td>（菩薩）能自在遊戲，出生百千種種三昧。</td><td class="bh7p5-guan"><b>經文標宗——遊戲、出生、百千三味碼</b>——本品經文僅此八字，卻蘊含三重密碼：「遊戲」指向自在無礙的心境，「出生」標明尚在修證途中的動態過程，「百千」展現法門的無窮多樣性；三者疊加構成全品「數量」與「性質」兩重辯證的總綱。</td></tr><tr><td class="bh7p5-src">諸菩薩禪定心調，清淨智慧方便力故，能生種種諸三昧。何等為三昧？善心一處住不動，是名三昧。</td><td>諸位菩薩由於禪定之心已經調柔，加上清淨智慧與善巧方便之力的緣故，能夠生起種種不同的三昧。什麼是三昧呢？善心安住於一處、不動搖散亂，這就稱為三昧。</td><td class="bh7p5-guan"><b>三昧釋名——善的專注力</b>——「善心一處住不動」點出三昧的本質：三昧並非模糊的宗教體驗或逃避現實，而是「善」（道德智慧的統一）與「一處住不動」（專注穩定）二者的結合，是有質地、有價值方向的精神集中。</td></tr><tr><td class="bh7p5-src">復有三種三昧：有覺有觀、無覺有觀、無覺無觀三昧。復有四種三昧：欲界繫三昧、色界繫三昧、無色界繫三昧，不繫三昧。</td><td>此外還有三種三昧：有覺有觀三昧、無覺有觀三昧、無覺無觀三昧。又有四種三昧：欲界所繫的三昧、色界所繫的三昧、無色界所繫的三昧，以及不被三界所繫的三昧。</td><td class="bh7p5-guan"><b>多維分類——三昧非單一面向</b>——從「覺觀」的心理動作維度、到「界繫」的精神境界維度，三昧被展開為一個多維度的分類空間：越往深細一端（無覺無觀），專注越深；越往超越一端（不繫三昧），越出離三界。此一多維分類，已預示「百千三昧」之說絕非誇飾。</td></tr><tr><td class="bh7p5-src">是中所用菩薩三昧，如先說，於佛三昧中未滿，勤行勤修故，言「能出生」。</td><td>這裡所運用的菩薩三昧，就像前面所說的，相較於佛的三昧而言尚未圓滿，正因為菩薩仍在勤奮修行、精進修證之中，所以經文才說是「能出生」。</td><td class="bh7p5-guan"><b>菩薩三昧的中間定位——尚在修證、非坐待成</b>——「於佛三昧中未滿」點出菩薩三昧介於凡夫（未證三昧）與佛（三昧圓滿）之間的中間位置；「勤行勤修故言能出生」則消解了「菩薩道坐以待成」的誤解——菩薩道是主動的、創造性的修行過程，每一步都在「出生」新的禪定與智慧。</td></tr><tr><td class="bh7p5-qa">問曰：諸菩薩何以故出生遊戲是百千種三昧？</td><td>有人問：諸位菩薩為什麼要出生、遊戲於這百千種三昧之中呢？</td><td class="bh7p5-guan"><b>設問——數量問題的提出</b>——此問直探全品第一重辯證的核心：菩薩何以不滿足於一兩種標準法門，而必須修習多達「百千」種三昧？這是全品由「文本基底」轉入「第一重辯證」的樞紐提問。</td></tr><tr><td class="bh7p5-qa">答曰：眾生無量，心行不同，有利有鈍，於諸結使有厚有薄；是故菩薩行百千種三昧，斷其塵勞。</td><td>回答說：眾生的數量無量無邊，心念與行為各不相同，根器有利根、有鈍根，對於種種煩惱結使，有的深重、有的淺薄；正因如此，菩薩才修行百千種三昧，來斷除眾生形形色色的塵勞煩惱。</td><td class="bh7p5-guan"><b>釋疑——工具的無量性對應問題的複雜性</b>——此答以「眾生無量、心行不同、利鈍不一、結使厚薄不同」四個維度，說明救度對象具有極端的異質性；單一法門猶如單一藥方面對千萬種疾病，必然無法勝任，「百千三昧」正是對這一客觀複雜現實的必然回應。</td></tr><tr><td class="bh7p5-src">譬如為諸貧人欲令大富，當備種種財物，一切備具，然後乃能濟諸貧者。</td><td>就好比想要使種種貧窮的人都得到富足，就必須預先準備種種不同的財物，樣樣齊備之後，才能夠真正救濟到每一位貧窮的人。</td><td class="bh7p5-guan"><b>大富之喻——財富多樣性對應貧困多樣性</b>——貧困的成因與樣態各不相同：有人缺糧食、有人缺衣物、有人缺工具，唯有備齊「種種財物」，才能有效滿足每一個貧人的具體需求，正喻菩薩法門必須多樣，方能對應眾生煩惱的多樣。</td></tr><tr><td class="bh7p5-src">又復如人欲廣治諸病，當備種種眾藥，然後能治。</td><td>又好比一個人想要廣泛地治療種種疾病，就必須預先備妥種種不同的藥物，然後才能夠真正對症治療。</td><td class="bh7p5-guan"><b>治病之喻——藥物多樣性對應病症多樣性</b>——寒症用溫藥、熱症用涼藥、虛症用補藥、實症用瀉藥，唯有掌握「種種眾藥」，才能精準對治每一種疾病；此喻與大富喻並列，共同指向「單一解方無法對治多元的匱乏或病症」這一核心邏輯。</td></tr><tr><td class="bh7p5-src">菩薩亦如是，欲廣度眾生故，行種種百千三昧。</td><td>菩薩也是同樣的道理，因為想要廣泛度化一切眾生，所以修行種種、多達百千的三昧法門。</td><td class="bh7p5-guan"><b>類比終點——備齊法門方能廣度</b>——「亦如是」是大富喻、治病喻的類比終點：菩薩就如同那位想要「濟諸貧者」「廣治諸病」的人，唯有「備」齊了百千三昧，才能對應眾生之百千煩惱，真正實現廣度眾生的誓願。</td></tr><tr><td class="bh7p5-qa">問曰：但當出生此三昧，何以故復遊戲其中？</td><td>有人問：菩薩只要出生、修成這些三昧就夠了，為什麼還要在其中「遊戲」呢？</td><td class="bh7p5-guan"><b>設問——性質問題的提出</b>——上文已回答「為何百千」的數量問題，此問轉而追究「遊戲」二字的性質意涵：修成三昧與「遊戲」於三昧之中，二者有何不同？這是全品由第一重辯證轉入第二重辯證（性質問題）的關鍵提問。</td></tr><tr><td class="bh7p5-qa">答曰：菩薩心生諸三昧，欣樂出入自在，名之為「戲」，非結愛戲也。「戲」名自在；如師子在鹿中自在無畏故，名為「戲」。</td><td>回答說：菩薩心中生起種種三昧之後，能夠歡喜自在地隨意出、隨意入，這才稱為「戲」，這並不是被煩惱結縛、貪愛所牽引的那種「嬉戲」。這裡「戲」字所指的是「自在」；就好比獅子行走在鹿群之中，毫無畏懼、完全自在，因此才稱為「戲」。</td><td class="bh7p5-guan"><b>釋「戲」——自在無畏，非結愛之戲</b>——論主特別澄清：「戲」並非世俗耽溺執著的遊戲，而是「出入自在」的絕對自主性；師子在鹿群中自在無畏之喻極為精妙——鹿象徵眾生與煩惱之紛雜難馭，獅子象徵菩薩掌握無量禪定智慧悲心，「自在無畏」正是「遊戲」一詞真正的含義所在。</td></tr><tr><td class="bh7p5-src">是諸菩薩於諸三昧有自在力，能出能入亦能如是。餘人於三昧中，能自在入，不能自在住、自在出；有自在住，不能自在入、自在出；有自在出，不能自在住、自在入；有自在入、自在住，不能自在出；有自在住、自在出，不能自在入。是諸菩薩能三種自在，故言「遊戲出生百千三昧」。</td><td>諸位菩薩對於種種三昧具有自在之力，能出、能入，也能像獅子在鹿群中那樣自在無畏。而其他修行人在三昧之中，有的能夠自在地進入，卻不能自在地安住、自在地退出；有的能夠自在地安住，卻不能自在地進入、退出；有的能夠自在地退出，卻不能自在地安住、進入；有的能夠自在地進入、安住，卻不能自在地退出；有的能夠自在地安住、退出，卻不能自在地進入。唯有這些菩薩才能同時具足「入、住、出」三種自在，因此經文才說「遊戲出生百千三昧」。</td><td class="bh7p5-guan"><b>三種自在——遊戲一詞的完整界定</b>——論主以窮舉法列出「入、住、出」三者的五種不完全組合（餘人所能達到者），對比映襯出唯有菩薩能同時具足三種自在，缺一不可；「入而不迷、住而不著、出而不戀」正是「遊戲」一詞最終極、最完整的定義，也是「百千三昧」數量之廣與「遊戲」性質之深二者的匯合點。</td></tr></tbody></table><p class="bh7p5-note">本品經文僅「遊戲出生百千三昧」一句，論主先釋三昧定義與多維分類，次以大富、治病二喻及二問二答，論證「眾生無量故三昧無量」的數量辯證，終以師子在鹿中自在無畏之喻，釋明入、住、出三種自在方為「遊戲」真義。白話忠於原意、問答逐段對照（二問二答皆原典，經在最頂）。　中觀關鍵詞：善心一處住不動　大富治病二喻眾生無量　入住出三種自在遊戲</p></div></div>
+<script id="wy-bh7p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p5Btn"),BOX=document.getElementById("bh7p5Box"),MODAL=document.getElementById("bh7p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p5Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P5:END-->
 </body>
 </html>
