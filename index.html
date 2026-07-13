@@ -2481,5 +2481,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P8:END-->
+<!--WY-BH7P9:BEGIN-->
+<style id="wy-bh7p9-css">
+.bh7p9-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p9-fabbox.show{display:block;}
+.bh7p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p9-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p9-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p9-modal.open{display:flex;}
+.bh7p9-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p9-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p9-close:hover{background:#dde2e6;}
+.bh7p9-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p9-tbl th,.bh7p9-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p9-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p9-tbl thead th:nth-child(1){width:32%;}.bh7p9-tbl thead th:nth-child(2){width:41%;}.bh7p9-tbl thead th:nth-child(3){width:27%;}
+.bh7p9-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p9-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p9-guan{background:#eef2f5;color:#37505f;}
+.bh7p9-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p9-tbl tbody tr:nth-child(even) td.bh7p9-guan{background:#e8eef2;}
+.bh7p9-tbl tbody tr:nth-child(even) td.bh7p9-qa{background:#e7ecdb;}
+.bh7p9-tbl b{color:#8b2500;}
+.bh7p9-guan b{color:#2f6b5a;}
+.bh7p9-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p9-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p9-fabbox{right:14px;}.bh7p9-tbl{font-size:11px;}.bh7p9-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p9-fabbox" id="bh7p9Box"><button class="bh7p9-btn" id="bh7p9Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p9-ic">譯</span><span class="bh7p9-ls"><span class="bh7p9-l1">本品 · 原文·白話·中觀</span><span class="bh7p9-l2">白話翻譯表</span></span></button></div><div class="bh7p9-modal" id="bh7p9Modal" role="dialog" aria-modal="true"><div class="bh7p9-card"><button class="bh7p9-close" id="bh7p9Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第9品 白話翻譯表（舉身微笑）</h3><p class="sub">《大智度論》卷七‧第9品‧舉身微笑：世尊出定以天眼觀世舉身微笑，論主以五輪問答層層追問起定觀世、用天眼之由、天眼得名、一切身笑、佛何以笑等疑惑 · 原文↔白話↔中觀概念對照（含五問五答）</p><table class="bh7p9-tbl"><caption>舉身微笑 · 原文｜白話翻譯｜中觀概念（共11段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p9-src">爾時，世尊從三昧安庠而起，以天眼觀視世界，舉身微笑。</td><td>那時，世尊從三昧之中安詳地出定而起，以天眼觀照整個世界，全身上下都露出微笑。</td><td class="bh7p9-guan"><b>三個動作節點——動靜、視角、身相</b>——短短一句經文，藏著「從定而起」（動靜之際）、「以天眼觀世」（視角之擇）、「舉身微笑」（身相之異）三個動作節點，正是以下五輪問答層層追問的文本依據。</td></tr><tr><td class="bh7p9-qa">問曰：云何世尊入三昧王三昧無所施作，而從定起觀視世界？</td><td>有人問：為什麼世尊進入三昧王三昧的時候，並沒有做任何特別的事，而是要等到從定中出來之後，才觀看整個世界呢？</td><td class="bh7p9-guan"><b>入定何以「無所施作」的疑惑</b>——延續上品「三昧王三昧」的討論，此問聚焦在「入定中」與「出定後」的行為落差：既然入定境界如此殊勝，為何觀世度眾的具體動作要等到出定之後才發生？</td></tr><tr><td class="bh7p9-qa">答曰：佛入是三昧王三昧，一切佛法寶藏悉開悉看。是三昧王三昧中觀已，自念：「我此法藏無量無數，不可思議！」然後從三昧安庠而起，以天眼觀眾生，知眾生貧苦。此法藏者從因緣得，一切眾生皆亦可得，但坐癡冥，不求不索。以是故，舉身微笑。</td><td>回答說：佛陀進入這個三昧王三昧之中，一切佛法的寶藏全都開顯、全都照見。在三昧王三昧之中觀照完畢之後，自己心念：「我這個法藏是如此無量無數、不可思議啊！」然後才從三昧之中安詳地出定而起，用天眼觀照眾生，得知眾生的貧乏困苦。這個法藏本是依因緣而證得，一切眾生其實也都能夠證得，只可惜眾生耽溺在愚癡昏昧之中，不去追求、不去尋索。因此，佛陀才會全身微笑。</td><td class="bh7p9-guan"><b>定中自證，出定為度他——法藏本可共證</b>——入定時是佛「自受用」地遍觀法藏無量的自證境界；出定後轉為「觀視眾生」的度他行動。微笑的根源在於一個強烈的對比：法藏「從因緣得」，本非佛所獨有，一切眾生皆可證得，卻「但坐癡冥，不求不索」——這正是全品悲智交融的核心。</td></tr><tr><td class="bh7p9-qa">問曰：佛有佛眼、慧眼、法眼，勝於天眼，何以用天眼觀視世界？</td><td>有人問：佛陀具有佛眼、慧眼、法眼，這些都勝過天眼，為什麼要用天眼來觀看世界呢？</td><td class="bh7p9-guan"><b>五眼位階與「用天眼」的落差之惑</b>——佛具五眼，佛眼、慧眼、法眼皆勝於天眼，若論境界高下，理當用最殊勝之眼觀世，為何反而選用天眼？此問延續對「觀視」動作的追問，聚焦在「用何眼」的抉擇上。</td></tr><tr><td class="bh7p9-qa">答曰：肉眼所見不遍故；慧眼知諸法實相；法眼見是人以何方便、行何法得道；佛眼名一切法現前了了知。今天眼緣世界及眾生，無障無礙，餘眼不爾。慧眼、法眼、佛眼雖勝，非見眾生法；欲見眾生，唯以二眼：肉眼、天眼。以肉眼不遍，有所障故，用天眼觀。</td><td>回答說：肉眼所能見到的範圍並不周遍；慧眼所了知的是諸法的實相；法眼所見的是這個人應以何種方便法門、修行何種法而得道；佛眼則是對一切法都能現前了了分明地了知。如今天眼能夠攀緣整個世界以及一切眾生，沒有任何障礙阻隔，其餘幾種眼則不是如此。慧眼、法眼、佛眼雖然殊勝，卻不是專門用來照見「眾生」這一層面的；想要照見眾生，唯有依靠肉眼與天眼這兩種眼。而肉眼所見不夠周遍、有所障礙，因此才使用天眼來觀看。</td><td class="bh7p9-guan"><b>五眼各有所司，非高下取代</b>——答案指出五眼並非單純的高低階梯，而是各有其功能範圍：慧眼照實相、法眼照根機、佛眼照一切法，唯獨「照見眾生」這個特定任務，需要肉眼或天眼；天眼因無障無礙、周遍一切，故最契合此刻「觀視世界眾生」的需要。功能相應勝過位階高低，是此答的核心洞見。</td></tr><tr><td class="bh7p9-qa">問曰：今是眼在佛，何以名為「天眼」？</td><td>有人問：如今這個眼睛既然是佛陀所擁有的，為什麼還要稱它為「天眼」呢？</td><td class="bh7p9-guan"><b>名稱歸屬之惑——「天」眼何以屬佛</b>——此問質疑「天眼」這個名稱本應歸屬於天人，如今卻用來稱呼佛所具備的眼根，是否有名實不符之嫌？</td></tr><tr><td class="bh7p9-qa">答曰：此眼多在天中，天眼所見，不礙山壁樹木。若人精進、持戒、禪定行力得，非是生分。以是故，名為天眼。復次，人多貴天，以天為主，佛隨人心，以是故名為天眼。復次，天有三種：名天、生天、淨天。名天：天王、天子是也。生天：釋、梵諸天是也。淨天：佛、辟支佛、阿羅漢是也。淨天中尊者是佛，今言「天眼」，亦無咎也。「天眼觀視世界」者，以世界眾生常求安樂而更得苦；心著吾我，是中實無吾我。眾生常畏苦而常行苦，如盲人求好道，反墮深坑。如是等種種觀已，舉身微笑。</td><td>回答說：這種眼根多半是天人所擁有的，天眼所見之處，不會被山壁樹木所阻礙。假使是人透過精進修行、持戒、禪定之力而證得的，就不屬於與生俱來的果報，因此才稱為「天眼」。再者，世間人大多尊崇天神，以天為至尊之主，佛陀隨順人心的這種認知，所以也稱之為「天眼」。再者，「天」可分為三種：名天、生天、淨天。名天，指的是人間的天王、天子；生天，指的是帝釋、大梵等諸天；淨天，指的則是佛、辟支佛、阿羅漢。淨天之中最尊貴的就是佛，如今稱佛所具的眼為「天眼」，也並無過失。至於「以天眼觀視世界」，是因為世間眾生常常追求安樂，結果反而得到痛苦；內心執著有一個「我」，然而這當中其實並沒有真實的「我」存在。眾生總是畏懼痛苦，卻又總是造作招致痛苦的行為，就好比盲人尋求好路，反而墮入深坑之中。像這樣種種觀照完畢之後，佛陀便全身微笑。</td><td class="bh7p9-guan"><b>假名「天眼」與眾生顛倒相的雙重照見</b>——這段先以三重理由（見無障礙、隨順人心貴天之見、淨天中尊）說明「天眼」只是隨順世俗因緣的假名安立，並非執定佛眼真是天人所專屬；接著轉入天眼所照見的內容——眾生求樂得苦、著我而無我、畏苦而行苦，如盲人求道反墮深坑——這正是「舉身微笑」最直接的情感根源：見眾生顛倒受苦而生悲憫。</td></tr><tr><td class="bh7p9-qa">問曰：笑從口生，或時眼笑，今云何言「一切身笑」？</td><td>有人問：笑容一般是從口部產生的，有時候也會說「眼睛在笑」，但如今為什麼說是「全身都在笑」呢？</td><td class="bh7p9-guan"><b>局部器官與「一切身」的落差之惑</b>——世俗經驗中，笑總是局限於口、眼等特定部位的表情變化，此問質疑「一切身笑」這種說法是否誇大或不合常理，是全品第四輪問答的切入點。</td></tr><tr><td class="bh7p9-qa">答曰：佛，世界中尊，得自在，能令一切身如口、如眼，故皆能笑。復次，一切毛孔皆開，故名為笑；由口笑歡喜故，一切毛孔皆開。</td><td>回答說：佛陀是世間至尊，已證得自在無礙的境界，能夠使全身每一處都如同口、如同眼一般，因此全身都能夠展現笑意。再者，「笑」也指一切毛孔全都開展舒張的狀態；正因為口部含笑而心生歡喜，才使得一切毛孔隨之全部開展。</td><td class="bh7p9-guan"><b>自在無礙——身根不再受限於局部功能</b>——答案的關鍵在「得自在」三字：佛的身根已超越凡夫「口只能笑、眼只能視」的功能局限，能令全身每個部位都如口如眼般具足表達歡喜的能力，這正是自在功德在身根層面的具體展現，也呼應了三昧王三昧「一切三昧悉入其中」的統攝精神。</td></tr><tr><td class="bh7p9-qa">問曰：佛至尊重，何以故笑？</td><td>有人問：佛陀是至為尊貴莊重的存在，為什麼要展露笑容呢？</td><td class="bh7p9-guan"><b>尊重與展顏——莊重是否排斥情感流露</b>——此問預設「至尊至重」與「露齒而笑」彼此扞格，質疑莊嚴的佛陀為何要做出看似輕鬆隨意的表情動作，是全品最後、也是篇幅最長的一輪問答的起點。</td></tr><tr><td class="bh7p9-qa">答曰：如大地，不以無事及小因緣而動；佛亦如是，若無事及小因緣則不笑，今大因緣故一切身笑。云何為大？佛欲說摩訶般若波羅蜜，無央數眾生當續佛種，是為大因緣。復次，佛言：「我世世曾作小虫、惡人，漸漸集諸善本，得大智慧；今自致作佛，神力無量最上最大。一切眾生亦可得爾，云何空受勤苦而墮小處？」以是故笑。復次，有小因大果、小緣大報。如求佛道，讚一偈、一稱南無佛、燒一捻香，必得作佛；何況聞知諸法實不生不滅、不不生不不滅，而行因緣業亦不失！以是事故笑。復次，般若波羅蜜相，清淨如虛空，不可與，不可取。佛種種方便，光明神德，欲教化一切眾生令心調柔，然後能信受般若波羅蜜。以是故，因笑放光。笑有種種因緣：有人歡喜而笑，有人瞋恚而笑，有輕人而笑，有見異事而笑，有見可羞恥事而笑，有見殊方異俗而笑，有見希有難事而笑。今是第一希有難事：諸法相，不生不滅，真空無字無名，無言無說；而欲作名立字，為眾生說令得解脫，是第一難事。譬如百由旬大火聚，有人負乾草入火中過，不燒一葉，是甚為難。佛亦如是，持八萬法眾名字草，入諸法實相中，不為染著火所燒，直過無礙，是為甚難。如是種種希有難事故，舉身微笑。</td><td>回答說：就好比大地，不會因為沒有緣故或微小的因緣而震動；佛陀也是如此，如果沒有緣故或只是微小的因緣，就不會展露笑容，如今是因為有重大的因緣，所以才全身含笑。什麼樣的因緣才算重大呢？佛陀即將宣說摩訶般若波羅蜜，無數眾生將因此得以延續佛的法種，這便是重大的因緣。再者，佛陀說：「我在過去世世代代之中，曾經做過微小的蟲子、惡人，漸漸積集種種善根，才證得廣大的智慧；如今自己已經成就佛道，神通之力無量無邊、最上最大。一切眾生也同樣能夠達到這樣的境界，為什麼要白白承受辛勞困苦而甘於墮落在卑微的處境呢？」因此而笑。再者，還有一種情況是「小小的因、得廣大的果，微小的緣、得廣大的報」。就好比求佛道的人，只是讚頌一首偈頌、稱誦一聲「南無佛」、燃燒一撮香，將來必定能夠成就佛道；更何況是聽聞了知「諸法實相本不生不滅、也不是『不生不滅』這樣的說法」的道理，同時又不廢因緣業行的修持！因為這件事，佛陀也展露笑容。再者，般若波羅蜜的實相，清淨得如同虛空一般，既不可給予，也不可執取。佛陀運用種種方便法門、以光明神通功德，想要教化一切眾生，使其心性調柔，然後才能夠信受般若波羅蜜。因此，佛陀藉著微笑而放出光明。笑本有種種不同的因緣：有人是因歡喜而笑，有人是因瞋怒而笑，有人是因輕視他人而笑，有人是因見到奇異之事而笑，有人是因見到可羞恥之事而笑，有人是因見到殊方異俗而笑，也有人是因見到稀有難得之事而笑。如今這正是第一等稀有難得之事：諸法的實相，本是不生不滅、真實空寂、無字無名、無言無說；而佛陀卻要為此建立名相、施設言說，為眾生宣說使其獲得解脫，這是第一等的難事。譬如有一堆延燒百由旬之廣的大火聚，有人身負乾草穿越火中而過，竟然連一片葉子都沒有燒毀，這是極為困難的事。佛陀也是如此，手持八萬法門的種種名相言說之草，進入諸法實相的真空火聚之中，卻不被染著之火所焚燒，直接穿越、毫無障礙，這是極為困難的事。正是因為這種種稀有難得之事，佛陀才全身微笑。</td><td class="bh7p9-guan"><b>大因緣、小因大果、名字草不燒——三重理由收束全品</b>——這段長答匯聚三層理由：其一，佛笑必有「大因緣」（將說般若、眾生可成佛道），如大地不因小事而動；其二，「小因大果」的緣起法則（一偈一稱一香而得作佛），說明因果不失卻又超越比例常識；其三，也是全篇的高潮比喻——佛持「名字草」（八萬法門的言說名相）穿越「諸法實相真空之火」而「不燒一葉」，正是二諦圓融、即相離相的極致展現：語言雖是假名、雖近乎虛幻易燃，卻能在契入勝義空性時毫髮無傷、直過無礙。這是「舉身微笑」最終極的根源——見到自己即將完成這件曠古未有的「難事」。</td></tr></tbody></table><p class="bh7p9-note">本品經文記世尊從三昧安庠而起，以天眼觀視世界，舉身微笑。論主以五輪問答逐一解惑：定中自證法藏無量、出定為觀眾生貧苦而興悲；五眼各有所司，觀眾生唯賴肉眼天眼；天眼是隨順世俗因緣的假名安立；佛得自在故一切身皆能如口如眼展現笑意；佛笑必有大因緣——將說般若、小因大果、以及「持名字草入實相火中不燒一葉」的二諦圓融終極譬喻。白話忠於原意、逐段對照（經在最頂，問在答前）。中觀關鍵詞：法藏從因緣得一切眾生亦可得　天眼假名安立不礙度生　名字草入實相火不燒一葉</p></div></div>
+<script id="wy-bh7p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p9Btn"),BOX=document.getElementById("bh7p9Box"),MODAL=document.getElementById("bh7p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p9Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P9:END-->
 </body>
 </html>
