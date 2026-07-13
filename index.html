@@ -2379,5 +2379,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P6:END-->
+<!--WY-BH7P7:BEGIN-->
+<style id="wy-bh7p7-css">
+.bh7p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p7-fabbox.show{display:block;}
+.bh7p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p7-modal.open{display:flex;}
+.bh7p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p7-close:hover{background:#dde2e6;}
+.bh7p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p7-tbl th,.bh7p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p7-tbl thead th:nth-child(1){width:32%;}.bh7p7-tbl thead th:nth-child(2){width:41%;}.bh7p7-tbl thead th:nth-child(3){width:27%;}
+.bh7p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p7-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p7-guan{background:#eef2f5;color:#37505f;}
+.bh7p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p7-tbl tbody tr:nth-child(even) td.bh7p7-guan{background:#e8eef2;}
+.bh7p7-tbl tbody tr:nth-child(even) td.bh7p7-qa{background:#e7ecdb;}
+.bh7p7-tbl b{color:#8b2500;}
+.bh7p7-guan b{color:#2f6b5a;}
+.bh7p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p7-fabbox{right:14px;}.bh7p7-tbl{font-size:11px;}.bh7p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p7-fabbox" id="bh7p7Box"><button class="bh7p7-btn" id="bh7p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p7-ic">譯</span><span class="bh7p7-ls"><span class="bh7p7-l1">本品 · 原文·白話·中觀</span><span class="bh7p7-l2">白話翻譯表</span></span></button></div><div class="bh7p7-modal" id="bh7p7Modal" role="dialog" aria-modal="true"><div class="bh7p7-card"><button class="bh7p7-close" id="bh7p7Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第7品 白話翻譯表（菩薩列名）</h3><p class="sub">《大智度論》卷七‧第7品‧菩薩列名：經文列舉二十二位菩薩名號，論主以數量、排序、空間三輪問答，層層破解「以少攝多」「大小無自性」「佛位無自性」 · 原文↔白話↔中觀概念對照（含三問三答）</p><table class="bh7p7-tbl"><caption>菩薩列名 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p7-src">其名曰：颰陀婆羅菩薩（秦言善守）、剌那伽羅菩薩（秦言寶積）、導師菩薩、那羅達菩薩、星得菩薩、水天菩薩、主天菩薩、大意菩薩、益意菩薩、增意菩薩、不虛見菩薩、善進菩薩、勢勝菩薩、常勤菩薩、不捨精進菩薩、日藏菩薩、不缺意菩薩、觀世音菩薩、文殊尸利菩薩（秦言妙德）、執寶印菩薩、常舉手菩薩、彌勒菩薩，如是等無量千萬億那由他諸菩薩摩訶薩，皆是補處紹尊位者。</td><td>與會菩薩的名字是：颰陀婆羅菩薩（漢譯為善守）、剌那伽羅菩薩（漢譯為寶積）、導師菩薩、那羅達菩薩、星得菩薩、水天菩薩、主天菩薩、大意菩薩、益意菩薩、增意菩薩、不虛見菩薩、善進菩薩、勢勝菩薩、常勤菩薩、不捨精進菩薩、日藏菩薩、不缺意菩薩、觀世音菩薩、文殊師利菩薩（漢譯為妙德）、執寶印菩薩、常舉手菩薩、彌勒菩薩——像這樣的無量千萬億那由他數的諸大菩薩，全都是即將遞補佛位、繼承世尊尊位的候選者。</td><td class="bh7p7-guan"><b>列名即懸案——二十二位背後的三大謎團</b>——經文先窮舉二十二位菩薩之名，卻又立刻加上「無量千萬億那由他」的總括語，形成「有限列舉」與「無限總攝」並存的張力。這正是論主隨後三輪設問（數量、排序、空間）的文本依據：為何獨說二十二？為何善守居首？彌勒已補處，何以眾菩薩皆稱『紹尊位者』？</td></tr><tr><td class="bh7p7-src">如是等諸菩薩，共佛住王舍城耆闍崛山中。</td><td>像這樣的種種菩薩，都與佛陀一同安住在王舍城的耆闍崛山中。</td><td class="bh7p7-guan"><b>共住即緣起場域</b>——「共佛住」三字，延續本卷「依止佛陀果覺而顯功德」的一貫筆法：菩薩眾非各自獨立說法，而是同攝於「王舍城耆闍崛山」這一具體時空的緣起場域之中，為下文「隨順時空因緣」的排序辯證預先埋下伏筆。</td></tr><tr><td class="bh7p7-qa">問曰：如是菩薩眾多，何以獨說二十二菩薩名？</td><td>有人問：像這樣的菩薩數量眾多，為什麼經文只單獨說出二十二位菩薩的名字？</td><td class="bh7p7-guan"><b>數量之問——有限文字如何面對無量法界</b>——此問直指「有限」與「無限」的根本衝突：菩薩眾本無量無邊，經文卻只列二十二名，是否意味著未被點名者較不重要？這是三輪辯證中的第一輪，也是最基礎的一層。</td></tr><tr><td class="bh7p7-qa">答曰：諸菩薩無量千萬億，說不可盡，若都說者，文字所不能載。復次，是中二種菩薩：居家、出家。善守等十六菩薩，是居家菩薩；颰陀婆羅居士菩薩，是王舍城舊人；寶積王子菩薩，是毘耶離國人；星得長者子菩薩，是瞻波國人；導師居士菩薩，是舍婆提國人；那羅達婆羅門菩薩，是彌梯羅國人；水天優婆塞菩薩。慈氏、妙德菩薩等，是出家菩薩。觀世音菩薩等，從他方佛土來。若說居家，攝一切居家菩薩；出家、他方亦如是。</td><td>回答說：諸位菩薩多達無量千萬億，說也說不完，如果要全部說出來，文字根本無法承載。再者，這當中可分為兩種菩薩：在家的與出家的。善守等十六位菩薩是在家菩薩——颰陀婆羅居士菩薩是王舍城本地人，寶積王子菩薩是毘耶離國人，星得長者子菩薩是瞻波國人，導師居士菩薩是舍婆提國人，那羅達婆羅門菩薩是彌梯羅國人，還有水天優婆塞菩薩。慈氏（彌勒）、妙德（文殊）等菩薩，則是出家菩薩。觀世音菩薩等，是從他方佛土而來。如果說到在家菩薩，就已經涵攝了一切在家菩薩；出家菩薩、他方菩薩也是同樣的道理。</td><td class="bh7p7-guan"><b>以少攝多——名字即無盡索引</b>——「文字所不能載」道出世俗諦的物理極限；但論主真正的答案在「若說居家，攝一切居家菩薩」一句——一個代表性的名字，因菩薩本性空無自性、彼此互不隔閡，而能如陀羅尼（總持）般攝盡同類。二十二名恰好涵蓋在家、出家、他方三類，遍攝一切大乘修行者型態，故雖二十二而已攝無量。</td></tr><tr><td class="bh7p7-qa">問曰：善守菩薩有何殊勝，最在前說？若最大在前，應說遍吉、觀世音、得大勢菩薩等；若最小在前，應說肉身初發意菩薩等。</td><td>有人問：善守菩薩有什麼殊勝之處，能夠被排在最前面說出？如果是依境界最大的排在前面，那應該要說遍吉（普賢）、觀世音、得大勢等菩薩；如果是依境界最小的排在前面，那應該要說剛發心的肉身初發意菩薩等。</td><td class="bh7p7-guan"><b>排序之問——絕對階級與當下因緣的衝突</b>——提問者預設了一把「絕對大小」的量尺，認為排序理當按境界高低（最大或最小）決定。這是第二輪辯證，處理的是「序」的迷思——階級是否真有一個客觀、固定的標準？</td></tr><tr><td class="bh7p7-qa">答曰：不以大，不以小，以善守菩薩是王舍城舊人，白衣菩薩中最大。佛在王舍城欲說般若波羅蜜，以是故最在前說。復次，是善守菩薩，無量種種功德，如《般舟三昧》中，佛自現前讚其功德。</td><td>回答說：既不是因為境界最大，也不是因為境界最小，而是因為善守菩薩是王舍城的本地舊人，在在家菩薩之中地位最高。佛陀當時正在王舍城要宣說般若波羅蜜，因此才把他排在最前面說出。再者，這位善守菩薩具有無量種種功德，就如同《般舟三昧經》中，佛陀曾親自現前讚歎他的功德一樣。</td><td class="bh7p7-guan"><b>大小無自性，排序全憑緣起契合度</b>——「不以大，不以小」五字，直接破除提問者「自性大」「自性小」的二元對立執著：大小本是相待而立、並無自性的假名。善守居首，靠的不是抽象階級，而是「王舍城舊人」「白衣菩薩之首」兩項具體緣起條件，與佛陀當下說法的時空完美契合；同時「無量種種功德」又補上內因，說明世俗安排與勝義功德並不衝突。</td></tr><tr><td class="bh7p7-qa">問曰：若彌勒菩薩應稱補處，諸餘菩薩何以復言「紹尊位者」？</td><td>有人問：如果彌勒菩薩應該稱為『補處』（下一尊佛的候選者），那麼其餘的菩薩為什麼也同樣被稱為『紹尊位者』（繼承尊位的人）呢？</td><td class="bh7p7-guan"><b>空間之問——單一王座與無盡法界的衝突</b>——此問把「王位繼承只能有一人」的世俗經驗，套用到「補處佛位」之上，質疑既然彌勒已是公認的下一尊佛，其他菩薩豈能同時共享「紹尊位」的稱號？這是第三輪辯證，處理的是「位」的迷思。</td></tr><tr><td class="bh7p7-qa">答曰：是諸菩薩於十方佛土皆補佛處。</td><td>回答說：這些菩薩分別在十方無量的佛土之中，各自遞補為那個世界的下一尊佛。</td><td class="bh7p7-guan"><b>佛位無自性，十方並存不相礙</b>——短短九字，徹底翻轉「佛位是唯一稀缺席位」的錯覺。佛位的本質是覺悟的圓滿與大悲的顯現，並非物理空間中排他性的座位；十方世界無量無邊，每位菩薩各依自身因緣、在各自的世界補佛之處，彼此並存不悖，如同眾川萬流各歸其海，而非爭奪同一王座。</td></tr></tbody></table><p class="bh7p7-note">本品經文列舉二十二位菩薩名號並總攝無量千萬億那由他菩薩，論主以三輪問答逐一解惑：其一以「文字所不能載」與「一法攝一切法」解數量之謎；其二以「不以大，不以小」與「王舍城舊人」解排序之謎；其三以「十方佛土皆補佛處」解空間之謎。白話忠於原意、三問三答逐段對照（經在最頂，問在答前）。中觀關鍵詞：一法攝一切法的總持　大小無自性隨緣排序　十方佛土皆補佛處</p></div></div>
+<script id="wy-bh7p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p7Btn"),BOX=document.getElementById("bh7p7Box"),MODAL=document.getElementById("bh7p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p7Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P7:END-->
 </body>
 </html>
