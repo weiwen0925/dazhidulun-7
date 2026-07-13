@@ -2634,5 +2634,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P11:END-->
+<!--WY-BH7P12:BEGIN-->
+<style id="wy-bh7p12-css">
+.bh7p12-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p12-fabbox.show{display:block;}
+.bh7p12-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p12-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p12-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p12-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p12-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p12-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p12-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p12-modal.open{display:flex;}
+.bh7p12-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p12-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p12-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p12-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p12-close:hover{background:#dde2e6;}
+.bh7p12-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p12-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p12-tbl th,.bh7p12-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p12-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p12-tbl thead th:nth-child(1){width:32%;}.bh7p12-tbl thead th:nth-child(2){width:41%;}.bh7p12-tbl thead th:nth-child(3){width:27%;}
+.bh7p12-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p12-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p12-guan{background:#eef2f5;color:#37505f;}
+.bh7p12-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p12-tbl tbody tr:nth-child(even) td.bh7p12-guan{background:#e8eef2;}
+.bh7p12-tbl tbody tr:nth-child(even) td.bh7p12-qa{background:#e7ecdb;}
+.bh7p12-tbl b{color:#8b2500;}
+.bh7p12-guan b{color:#2f6b5a;}
+.bh7p12-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p12-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p12-fabbox{right:14px;}.bh7p12-tbl{font-size:11px;}.bh7p12-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p12-fabbox" id="bh7p12Box"><button class="bh7p12-btn" id="bh7p12Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p12-ic">譯</span><span class="bh7p12-ls"><span class="bh7p12-l1">本品 · 原文·白話·中觀</span><span class="bh7p12-l2">白話翻譯表</span></span></button></div><div class="bh7p12-modal" id="bh7p12Modal" role="dialog" aria-modal="true"><div class="bh7p12-card"><button class="bh7p12-close" id="bh7p12Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第12品 白話翻譯表（光明遍照）</h3><p class="sub">《大智度論》卷七‧第12品‧光明遍照：諸光復出大光遍照三千大千世界乃至十方恒河沙世界，值光必得無上菩提，論主以三輪問答釋光明何以不循火焰上炎之常規遍滿十方、何以先照東方、光明幾時當滅 · 原文↔白話↔中觀概念對照（含三問三答）</p><table class="bh7p12-tbl"><caption>光明遍照 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p12-src">從是諸光出大光明，遍照三千大千世界。從三千大千世界，遍照東方如恒河沙等諸世界，南西北方、四維、上下亦復如是。若有眾生遇斯光者，必得阿耨多羅三藐三菩提。</td><td>從這些光明之中，又出生出更廣大的光明，遍照三千大千世界。再從三千大千世界，遍照東方如恒河沙數那樣多的世界，南方、西方、北方、四維、上方、下方也都是如此。若有眾生遇到這光明照觸，必定能夠得證無上正等正覺。</td><td class="bh7p12-guan"><b>光明遍照的果地宣告</b>——經文先陳述『果』：光明由三千大千世界層層擴展至十方恒沙世界，且值光必得無上菩提。此果地宣告，正是以下三輪問答所要追問的『如何可能』。</td></tr><tr><td class="bh7p12-qa">問曰：如火相上焰，水相下潤，風相傍行；是光明火氣應當上去，云何遍滿三千大千世界及十方世界？</td><td>有人問：如同火的體性向上焚燒、水的體性向下潤澤、風的體性橫向流動；這光明既然屬於火氣的一類，理應向上竄升，為什麼卻能遍滿三千大千世界乃至十方世界呢？</td><td class="bh7p12-guan"><b>設疑：以世間物理定律類推光明</b>——此問援引『火焰上、水潤下、風傍行』的世俗物理常識，將光明簡單歸類為『火氣』一物，質疑其遍照十方、四面八方的可能性，是以有限經驗律則套用於佛之無量境界。</td></tr><tr><td class="bh7p12-qa">答曰：光明有二種：一者火氣，二者水氣。日珠火氣，月珠水氣。火相雖焰上，而人身中火上下遍到。日火亦爾，是故夏月地水盡熱。以是故，知火不皆上。復次，是光明，佛力故，遍至十方；譬如強弓遣箭，隨所向至。</td><td>回答說：光明其實有兩種：一種是火氣，一種是水氣。譬如日珠所放屬於火氣，月珠所放屬於水氣。火的體性雖然是向上焚燒，但人身之中的火氣卻能上下遍到全身各處；日光中的火氣也是如此，所以夏天時大地與河水都會被曬得酷熱，可見火氣並非只能向上，由此可知『火相必定向上』並非絕對的定律。再者，這光明是憑藉佛陀威神之力而遍至十方的，就好比強弓射出的箭矢，能隨著所瞄準的方向而到達，並不受限於火焰本身向上的體性。</td><td class="bh7p12-guan"><b>破執：物理常規非定法，佛力超越世俗規律</b>——先以『人身之火上下遍到』『夏月地水盡熱』等實例，鬆動『火必上焰』的絕對化認知；再指出光明遍照根本不受世俗物理定律所限，而是『佛力故』——如強弓遣箭隨意所向，直指果地威神力方是遍照十方的真正根據。</td></tr><tr><td class="bh7p12-qa">問曰：何以先照東方，南、西、北後？</td><td>有人問：這光明為什麼先照亮東方，然後才依次照南方、西方、北方呢？</td><td class="bh7p12-guan"><b>設疑：方位次第是否意味著實有先後</b>——此問質疑光明遍照十方若有先後次第，是否表示東方比其餘方位更為優先、更具實質意義。</td></tr><tr><td class="bh7p12-qa">答曰：以日出東方為上故，佛隨眾生意，先照東方。復次，俱有一難。若先照南方，當言：「何以不先照東、西、北方？」若先照西方、北方亦爾。</td><td>回答說：因為世間以日出東方為尊上的緣故，佛陀隨順眾生的心意習慣，所以先照東方。再者，這其實是一個共通的詰難：無論先照哪一方，都會遭遇同樣的質疑——如果先照南方，人們同樣會問：『為什麼不先照東方、西方、北方呢？』若先照西方、北方，也都會招致同樣的追問。</td><td class="bh7p12-guan"><b>破執：次第是隨順世俗、非關實有優劣</b>——『先照東方』只是隨順『日出東方為上』的世俗共許，並非東方本具優越的自性；『俱有一難』更點破：無論選擇何種次第開展，都必然招致同樣的詰問，可見『先後』本身並無獨立實有的意義，正合二諦——勝義中光明遍照本無先後，世俗中方便示現才有次第。</td></tr><tr><td class="bh7p12-qa">問曰：光明幾時當滅？</td><td>有人問：這光明究竟到什麼時候才會熄滅呢？</td><td class="bh7p12-guan"><b>設疑：光明的存續是否有定期</b>——此問追問光明存滅的時間界限，預設光明如世間火燄般有其自然消長的定律。</td></tr><tr><td class="bh7p12-qa">答曰：佛用神力欲住便住，捨神力便滅。佛光如燈，神力如脂，若佛不捨神力，光不滅也。</td><td>回答說：佛陀運用神力，想要讓光明存住便能存住，一旦捨去神力，光明便會熄滅。佛的光明就好比燈火，神力則好比燈中的油脂；只要佛不捨去神力，這光明便不會熄滅。</td><td class="bh7p12-guan"><b>本體：光明存滅繫於神力，非自性恆存亦非自性斷滅</b>——以『燈與脂』為喻，說明光明的存續完全依於佛之神力（緣），而非光明自身具有恆常不變的自性；『欲住便住，捨神力便滅』正顯示一切法存滅皆繫於因緣和合，緣起故無自性，無自性故存滅自在，不落常、斷二邊。</td></tr></tbody></table><p class="bh7p12-note">本品經文記諸光復出大光明，遍照三千大千世界乃至十方恒河沙世界，值光者必得阿耨多羅三藐三菩提。論主以三輪問答釋疑：光明有火氣水氣二種、佛力故遍至十方如強弓遣箭，不受火必上炎之世俗物理所限；先照東方乃隨順世俗『日出東方為上』，非東方獨具優越自性，且無論先照何方皆有同一詰難；光明存滅繫於佛之神力，如燈與脂，神力不捨則光不滅。白話忠於原意、逐段對照（經在最頂，問在答前）。中觀關鍵詞：佛力超越世俗物理定律　次第隨順世俗而立、非關實有優劣　存滅緣起、不落常斷二邊</p></div></div>
+<script id="wy-bh7p12-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p12Btn"),BOX=document.getElementById("bh7p12Box"),MODAL=document.getElementById("bh7p12Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=11;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p12Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p12Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P12:END-->
 </body>
 </html>
