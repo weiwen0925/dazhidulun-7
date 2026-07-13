@@ -2124,5 +2124,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P1:END-->
+<!--WY-BH7P2:BEGIN-->
+<style id="wy-bh7p2-css">
+.bh7p2-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p2-fabbox.show{display:block;}
+.bh7p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p2-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p2-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p2-modal.open{display:flex;}
+.bh7p2-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p2-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p2-close:hover{background:#dde2e6;}
+.bh7p2-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p2-tbl th,.bh7p2-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p2-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p2-tbl thead th:nth-child(1){width:32%;}.bh7p2-tbl thead th:nth-child(2){width:41%;}.bh7p2-tbl thead th:nth-child(3){width:27%;}
+.bh7p2-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p2-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p2-guan{background:#eef2f5;color:#37505f;}
+.bh7p2-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p2-tbl tbody tr:nth-child(even) td.bh7p2-guan{background:#e8eef2;}
+.bh7p2-tbl tbody tr:nth-child(even) td.bh7p2-qa{background:#e7ecdb;}
+.bh7p2-tbl b{color:#8b2500;}
+.bh7p2-guan b{color:#2f6b5a;}
+.bh7p2-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p2-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p2-fabbox{right:14px;}.bh7p2-tbl{font-size:11px;}.bh7p2-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p2-fabbox" id="bh7p2Box"><button class="bh7p2-btn" id="bh7p2Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p2-ic">譯</span><span class="bh7p2-ls"><span class="bh7p2-l1">本品 · 原文·白話·中觀</span><span class="bh7p2-l2">白話翻譯表</span></span></button></div><div class="bh7p2-modal" id="bh7p2Modal" role="dialog" aria-modal="true"><div class="bh7p2-card"><button class="bh7p2-close" id="bh7p2Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第2品 白話翻譯表（念佛三昧功德論）</h3><p class="sub">《大智度論》卷七‧第2品‧念佛三昧功德論：聲聞菩薩念佛定境量級之辨、全效滅罪、五百估客稱佛號脫難、知恩圖報、大乘法義拼圖 · 原文↔白話↔中觀概念 逐段對照（含問答）</p><table class="bh7p2-tbl"><caption>念佛三昧功德論 · 原文｜白話翻譯｜中觀概念（共13段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p2-src">念無量佛土，諸佛三昧，常現在前。</td><td>憶念無量佛的國土，十方諸佛的三昧境界，恆常顯現在眼前。</td><td class="bh7p2-guan"><b>經文標宗——念佛三昧總綱</b>——本品經文僅此一句，卻涵蓋「無量佛土」（空間十方）與「常現在前」（時間三世）雙重維度，是全品「念佛三昧」論證展開的總綱。</td></tr><tr><td class="bh7p2-src">「無量佛土」，名十方諸佛土。「念佛三昧」，名十方三世諸佛，常以心眼見，如現在前。</td><td>所謂「無量佛土」，指的是十方一切諸佛的國土。所謂「念佛三昧」，指的是能以心眼（而非肉眼）恆常照見十方三世一切諸佛，就如同這些佛正現前一般。</td><td class="bh7p2-guan"><b>心眼見的關鍵轉換——超越物理感官的直觀</b>——論主特別點出是「心眼見」而非肉眼所見，將念佛三昧從物理感官的局限中超拔出來，直探十方三世的甚深禪觀境界，此為理解全品的關鍵鑰匙。</td></tr><tr><td class="bh7p2-qa">問曰：云何為念佛三昧？</td><td>有人問：什麼是念佛三昧呢？</td><td class="bh7p2-guan"><b>設問——直探念佛三昧的定義</b>——此問直接叩問「念佛三昧」的內涵，是全品第一重問答的起點，將引出聲聞、菩薩兩種念佛定境量級的根本區分。</td></tr><tr><td class="bh7p2-qa">答曰：念佛三昧有二種：一者、聲聞法中，於一佛身，心眼見滿十方；二者、菩薩道於無量佛土中，念三世十方諸佛。以是故言「念無量佛土，諸佛三昧，常現在前」。</td><td>回答說：念佛三昧有兩種：第一種，在聲聞法之中，是就一尊佛身，以心眼照見遍滿十方（的這一尊佛）；第二種，是菩薩道，在無量佛土之中，同時憶念三世十方一切諸佛。因此經文才說「憶念無量佛土，諸佛的三昧境界，恆常顯現在眼前」。</td><td class="bh7p2-guan"><b>辨體——聲聞菩薩念佛定境的量級差異</b>——此答是全品的核心骨架：聲聞念佛三昧是「於一佛身、心眼見滿十方」（以一佛為中心向外擴展，仍有一個固定所緣），菩薩念佛三昧則是「於無量佛土中，念三世十方諸佛」（同時遍及三世十方一切諸佛），二者定境的量級有本質性的差異，此即下文「境界之辯」的論證基礎。</td></tr><tr><td class="bh7p2-qa">問曰：如菩薩三昧種種無量，何以故但讚是菩薩念佛三昧常現在前？</td><td>有人問：菩薩所修的三昧種種無量，為什麼獨獨讚歎這個菩薩念佛三昧能夠恆常顯現在眼前呢？</td><td class="bh7p2-guan"><b>設問——獨讚念佛三昧之謎</b>——菩薩三昧法門眾多（空、無相、無作等），此問追究為何論主偏偏獨獨標舉、讚歎「念佛三昧」，是全品第二重問答的起點，將引出下文念佛三昧無可取代的五重理由。</td></tr><tr><td class="bh7p2-qa">答曰：是菩薩念佛故，得入佛道中。以是故，念佛三昧常現在前。</td><td>回答說：正因為菩薩憶念佛的緣故，才能夠趣入佛道之中。因此，念佛三昧才需要恆常顯現在眼前。</td><td class="bh7p2-guan"><b>釋疑總綱——念佛為入佛道之本</b>——此答是「獨讚念佛三昧」的總綱性回答：念佛三昧之所以特別受到讚歎，根本原因在於它是「入佛道之本」，其他三昧固然也能對治煩惱、成就定慧，卻不像念佛三昧這樣直接以「佛」為所緣、直趣佛道本身，下文將從滅罪、福德、倫理、法義等多重角度展開這一總綱。</td></tr><tr><td class="bh7p2-src">復次，念佛三昧能除種種煩惱及先世罪；餘諸三昧，有能除婬不能除瞋，有能除瞋不能除婬，有能除癡不能除婬、恚，有能除三毒不能除先世罪。是念佛三昧，能除種種煩惱、種種罪。</td><td>再者，念佛三昧能夠滅除種種煩惱以及過去世所造的罪業；而其他的種種三昧，有的能滅除貪婬卻不能滅除瞋恚，有的能滅除瞋恚卻不能滅除貪婬，有的能滅除愚癡卻不能滅除貪婬與瞋恚，有的能滅除貪瞋癡三毒卻不能滅除過去世的罪業。而這個念佛三昧，卻能夠滅除種種煩惱、種種罪業，沒有遺漏。</td><td class="bh7p2-guan"><b>維度一（自利）——全效滅罪的殊勝性</b>——以「餘諸三昧」逐一列舉其滅惑功能的侷限（各有所能除、亦各有所不能除），對比襯托出念佛三昧「能除種種煩惱、種種罪」的全效性，這是念佛三昧五重殊勝理由中的第一重：自利滅罪的層面。</td></tr><tr><td class="bh7p2-src">復次，念佛三昧有大福德，能度眾生；是諸菩薩欲度眾生，諸餘三昧無如此念佛三昧福德，能速滅諸罪者。</td><td>再者，念佛三昧具有廣大的福德，能夠度化眾生；諸位菩薩想要度化眾生時，會發現其他種種三昧都沒有像念佛三昧這樣的福德，能夠如此迅速地滅除種種罪業。</td><td class="bh7p2-guan"><b>維度二（利他）——福德與滅罪速度的雙重優勢</b>——承接上一重「自利滅罪」，這一重轉向「利他度生」的層面：念佛三昧不僅滅罪範圍全面，滅罪的速度也是其他三昧所不及，這雙重優勢正是菩薩藉以度化眾生的殊勝工具。</td></tr><tr><td class="bh7p2-src">如說：昔有五百估客，入海採寶；值摩伽羅魚王開口，海水入中，船去駃疾。船師問樓上人：「汝見何等？」答言：「見三日出，白山羅列，水流奔趣，如入大坑。」船師言：「是摩伽羅魚王開口，一是實日，兩日是魚眼，白山是魚齒，水流奔趣是入其口。我曹了矣！各各求諸天神以自救濟！」</td><td>就如經中所說的故事：從前有五百位商人，出海採集寶物；正巧遇上摩伽羅大魚王張開了口，海水湧入魚口之中，船隻被急速捲入、快速前進。船長詢問在瞭望樓上的人：「你看見了什麼？」瞭望的人回答說：「我看見三個太陽同時升起，白色的山巒羅列排開，水流湍急奔湧，就好像要衝入一個大坑洞一般。」船長聽了說：「這是摩伽羅魚王張開了口啊，其中一個是真的太陽，另外兩個其實是魚的眼睛，白色的山巒其實是魚的牙齒，湍急奔湧的水流，其實是正要沖入魚口之中啊。我們這下完了！大家各自去祈求諸天神來拯救自己吧！」</td><td class="bh7p2-guan"><b>文獻實證——五百估客遇摩伽羅魚王的譬喻鋪陳</b>——此則故事以驚心動魄的海難場景開篇，鋪陳出一個看似求助無門的絕境，為下文「稱念佛號」的效驗預留最強烈的戲劇張力，是全品「念佛三昧滅罪速度」最具體生動的文獻實證。</td></tr><tr><td class="bh7p2-src">是時諸人各各求其所事，都無所益。中有五戒優婆塞語眾人言：「吾等當共稱南無佛，佛為無上，能救苦厄！」眾人一心同聲稱南無佛。是魚先世是佛破戒弟子，得宿命智，聞稱佛聲心自悔悟，即便合口，船人得脫。</td><td>這時船上的人各自向自己所信奉的神祇祈求，卻都毫無效用。當中有一位受持五戒的優婆塞（在家居士）對大家說：「我們應當一起同聲稱念『南無佛』，佛是無上的，能夠救度我們脫離這場苦難！」於是眾人便一心同聲稱念「南無佛」。原來這條大魚在過去世曾是佛陀座下一位破戒的弟子，證得了宿命通智慧，一聽見眾人稱念佛號的聲音，心中頓時自我悔悟，當下便合起了口，船上的人因此才得以脫險。</td><td class="bh7p2-guan"><b>果證驗證——稱佛號獨能濟厄的量級論證</b>——與上一段「都無所益」的求助天神形成強烈對比，「一心同聲稱南無佛」當下即令巨魚合口脫險，具體演示了念佛超越其他一切祈求方式的殊勝效驗；魚身乃佛座下破戒弟子聞佛號而自悔的細節，更暗示念佛的力量能穿透最深重的業障與最險惡的處境。</td></tr><tr><td class="bh7p2-src">復次，佛為法王，菩薩為法將，所尊所重唯佛世尊，是故應常念佛。</td><td>再者，佛是法中之王，菩薩則是法中的將領，（菩薩）所尊崇、所敬重的唯有佛世尊，因此應當恆常憶念佛。</td><td class="bh7p2-guan"><b>維度三（倫理）——法界秩序與知恩圖報</b>——以「佛為法王，菩薩為法將」的君臣倫理秩序類比，說明菩薩常念佛不僅是修行方法的選擇，更是法界秩序中「以下尊上」倫理分位的自然體現，為下文「知恩圖報」的心法鋪墊。</td></tr><tr><td class="bh7p2-src">復次，常念佛得種種功德利。譬如大臣特蒙恩寵常念其主；菩薩亦如是，知種種功德、無量智慧皆從佛得，知恩重故常念佛。汝言「云何常念佛，不行餘三昧」者，今言「常念」，亦不言「不行餘三昧」，行念佛三昧多，故言「常念」。</td><td>再者，恆常念佛能夠獲得種種功德利益。就好比大臣特別蒙受君王的恩寵眷顧，因此常常憶念他的君主；菩薩也是同樣的道理，深知自己種種的功德、無量的智慧都是從佛而獲得的，因為深知佛恩深重的緣故，所以恆常憶念佛。你（提問者）說「為什麼要恆常念佛、而不修習其餘的三昧」，這裡所說的「常念」，並不是說「完全不修行其餘的三昧」，只是因為修行念佛三昧的比例較多，所以才說是「常念」。</td><td class="bh7p2-guan"><b>知恩圖報與常念釋疑——語意界定澄清誤解</b>——以大臣感念君恩為喻，說明「常念佛」的深層心理動力是知恩圖報；同時精確界定「常念」一詞的語意邊界——並非排他性地唯獨念佛、不修其餘三昧，而是念佛三昧修習比例較高，此一澄清避免了將念佛三昧與其他法門對立起來的誤解。</td></tr><tr><td class="bh7p2-src">復次，先雖說空、無相、無作三昧，未說念佛三昧，是故今說。</td><td>再者，先前雖然已經講說過空、無相、無作三種解脫三昧，卻還沒有講說念佛三昧，因此現在才特別講說念佛三昧。</td><td class="bh7p2-guan"><b>維度五（法義）——大乘教法拼圖的完整性</b>——以「先說三解脫門、未說念佛三昧」的論述次第，說明念佛三昧的宣說並非重複贅述，而是補全大乘教法體系中原本缺漏的一角；也預告下文「中觀圓融」的核心命題——三解脫門若無念佛三昧作為悲願的平衡與防護，恐有偏落畢竟空寂的危機。</td></tr></tbody></table><p class="bh7p2-note">本品經文僅「念無量佛土，諸佛三昧，常現在前」一句，論主先辨聲聞念佛（於一佛身心眼見滿十方）與菩薩念佛（於無量佛土念三世十方諸佛）定境量級之異，再以五重理由獨讚念佛三昧：全效滅罪、福德滅罪速度、知恩圖報之倫理、常念語意之澄清、補全三解脫門法義拼圖，並引五百估客遇摩伽羅魚王、稱念南無佛得脫之文獻實證。白話忠於原意、問答逐段對照（二問二答皆原典，經在最頂）；原頁另有二則以現代分析語彙包裝的「問曰／答曰」（討論「由點至面」「引用故事之用意」），核為編者導讀語而非龍樹原典，依鐵律⑩不納入。　中觀關鍵詞：心眼見超越物理感官　聲聞菩薩定境量級之辨　全效滅罪　稱佛號量級論證　常念非排他語意</p></div></div>
+<script id="wy-bh7p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p2Btn"),BOX=document.getElementById("bh7p2Box"),MODAL=document.getElementById("bh7p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p2Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P2:END-->
 </body>
 </html>
