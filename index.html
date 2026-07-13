@@ -2532,5 +2532,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P9:END-->
+<!--WY-BH7P10:BEGIN-->
+<style id="wy-bh7p10-css">
+.bh7p10-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p10-fabbox.show{display:block;}
+.bh7p10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p10-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p10-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p10-modal.open{display:flex;}
+.bh7p10-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p10-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p10-close:hover{background:#dde2e6;}
+.bh7p10-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p10-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p10-tbl th,.bh7p10-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p10-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p10-tbl thead th:nth-child(1){width:32%;}.bh7p10-tbl thead th:nth-child(2){width:41%;}.bh7p10-tbl thead th:nth-child(3){width:27%;}
+.bh7p10-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p10-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p10-guan{background:#eef2f5;color:#37505f;}
+.bh7p10-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p10-tbl tbody tr:nth-child(even) td.bh7p10-guan{background:#e8eef2;}
+.bh7p10-tbl tbody tr:nth-child(even) td.bh7p10-qa{background:#e7ecdb;}
+.bh7p10-tbl b{color:#8b2500;}
+.bh7p10-guan b{color:#2f6b5a;}
+.bh7p10-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p10-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p10-fabbox{right:14px;}.bh7p10-tbl{font-size:11px;}.bh7p10-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p10-fabbox" id="bh7p10Box"><button class="bh7p10-btn" id="bh7p10Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p10-ic">譯</span><span class="bh7p10-ls"><span class="bh7p10-l1">本品 · 原文·白話·中觀</span><span class="bh7p10-l2">白話翻譯表</span></span></button></div><div class="bh7p10-modal" id="bh7p10Modal" role="dialog" aria-modal="true"><div class="bh7p10-card"><button class="bh7p10-close" id="bh7p10Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第10品 白話翻譯表（足下放光）</h3><p class="sub">《大智度論》卷七‧第10品‧足下放光：世尊足下千輻相輪放六百萬億光明，論主以四輪問答層層追問先放身光之由、與天人放光之異、先從足下放光之由、有限光數如何遍照十方等疑惑 · 原文↔白話↔中觀概念對照（含四問四答）</p><table class="bh7p10-tbl"><caption>足下放光 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p10-src">從足下千輻相輪中，放六百萬億光明。</td><td>從佛陀足底千輻輪相之中，放出六百萬億道光明。</td><td class="bh7p10-guan"><b>足下放光——全品問答的起點</b>——經文只描述了一個具體的身相動作：光明從「足下」而非其他部位放出。這個看似細節的方位選擇，成了以下四輪問答層層追問的核心線索。</td></tr><tr><td class="bh7p10-qa">問曰：佛何以故先放身光？</td><td>有人問：佛陀為什麼要先放出身體的光明呢？</td><td class="bh7p10-guan"><b>放光次第之問——為何以「身光」為先</b>——延續上品「舉身微笑」的討論，此問聚焦於微笑之後的下一個動作：放光。既然佛有多種示現方式，為何選擇先以「身光」開端？</td></tr><tr><td class="bh7p10-qa">答曰：上笑因緣中已答，今當更說。有人見佛無量身，放大光明，心信清淨恭敬故，知非常人。復次，佛欲現智慧光明神相故，先出身光，眾生知佛身光既現，智慧光明亦應當出。復次，一切眾生常著欲樂，五欲中第一者色；見此妙光，心必愛著，捨本所樂；令其心漸離欲，然後為說智慧。</td><td>回答說：這在前面「笑」的因緣之中已經回答過了，如今再進一步說明。有人見到佛陀從無量的身相之中放出廣大的光明，心中便生起清淨恭敬的信心，知道這不是一位平凡的人。再者，佛陀想要顯現智慧光明的神妙相狀，所以先放出身體的光明，讓眾生知道佛身的光明既已顯現，智慧的光明也應當隨之顯現。再者，一切眾生常常耽著於五欲之樂，而五欲之中又以「色」（形色）為第一；眾生見到這殊妙的光明，內心必定會生起愛著之心，進而捨棄原本所貪著的欲樂；藉此使眾生的心逐漸遠離欲染，然後才為他們宣說智慧之法。</td><td class="bh7p10-guan"><b>身光為智慧光明的先導與方便</b>——三層理由層層遞進：先令眾生生起清淨信心，再以身光引出智慧光明的期待，最後借眾生對「色」的貪愛，反過來以殊妙之光引導其心漸離欲染。身光在此不是目的本身，而是接引眾生趣入智慧的善巧方便。</td></tr><tr><td class="bh7p10-qa">問曰：其餘天人亦能放光，佛放光明有何等異？</td><td>有人問：其餘的天人也同樣能夠放出光明，佛陀所放的光明與他們相比，究竟有什麼不同之處呢？</td><td class="bh7p10-guan"><b>光明之量的比較之問</b>——此問把佛光與天人之光並列比較，質疑既然放光並非佛所獨有的能力，那麼佛光的殊勝之處究竟何在？</td></tr><tr><td class="bh7p10-qa">答曰：諸天人雖能放光，有限有量；日月所照，唯四天下；佛放光明，滿三千大千世界，三千大千世界中出，遍至下方。餘人光明，唯能令人歡喜而已；佛放光明，能令一切聞法得度，以是為異。</td><td>回答說：諸天人雖然也能夠放出光明，但終究有限有量；就連日月的光照，也只能遍及四天下而已。佛陀所放的光明，卻能夠遍滿三千大千世界，從三千大千世界之中湧出，並且遍及下方一切世界。其餘天人所放的光明，只能夠令人心生歡喜而已；佛陀所放的光明，卻能夠使一切眾生聽聞佛法而得度脫，這便是兩者的不同之處。</td><td class="bh7p10-guan"><b>量的無限與質的度化——雙重超越</b>——答案從兩個層面說明差異：其一是「量」的懸殊，天人光明有限有量、僅及四天下，佛光卻遍滿三千大千世界；其二、也是更根本的，是「質」的不同——天人光明僅止於令人歡喜的感官效果，佛光卻能作為聞法得度的因緣，直指光明背後度化眾生的究竟目的。</td></tr><tr><td class="bh7p10-qa">問曰：如一身中，頭為最上，何以故先從足下放光？</td><td>有人問：就如同一個身體之中，頭部是最為尊上的部位，為什麼佛陀不從頭部，反而要先從足底放出光明呢？</td><td class="bh7p10-guan"><b>方位尊卑之問——頭尊足賤的世俗成見</b>——此問延續「自敷師子座」一類「尊卑錯位」的提問模式，預設身體各部位有固定的尊卑次第，質疑佛陀捨尊就卑、先從最卑下的足部放光，是否有失身分。</td></tr><tr><td class="bh7p10-qa">答曰：身得住處，皆由於足。復次，一身中雖頭貴而足賤，佛不自貴光，不為利養，以是故於賤處放光。復次，諸龍、大蛇、鬼神，從口中出光，毒害前物；若佛口放光明，眾生怖畏，是何大光！復恐被害，是故從足下放光。</td><td>回答說：整個身體之所以能夠站立安住，全都是依靠雙足的緣故。再者，一個身體之中雖然頭部尊貴而足部卑賤，但佛陀並不自居其光明為尊貴之物，也不是為了求取利養恭敬，因此才特意從卑賤之處放出光明。再者，諸龍、大蛇、鬼神一類眾生，是從口中吐出光明的，這種光明具有毒害前方事物的作用；如果佛陀從口中放出光明，眾生見了恐怕會心生怖畏，心想：「這是何等可怕的大光啊！」又擔心因此受到傷害，因此佛陀特意選擇從足下放出光明。</td><td class="bh7p10-guan"><b>不貴己光、不為利養——捨尊就卑的深意</b>——答案先以「身賴足而立」翻轉「足卑」的成見，說明足其實是全身根基所在；接著點出核心：「佛不自貴光，不為利養」——放光從何處而出，全不涉及自我尊貴的計較，唯以利益眾生為念，甚至考量若從口出光恐令眾生生怖，寧可選擇最不引人側目、最無威嚇感的足下，這正是無我利他精神在身相示現上的具體落實。</td></tr><tr><td class="bh7p10-qa">問曰：足下六百萬億光明，乃至肉髻，是皆可數；三千大千世界尚不可滿，何況十方！</td><td>有人問：從足下所放出的六百萬億道光明，乃至於頭頂肉髻所放的光明，這些數目終究都是可以計算出來的；用這樣有限可數的光明，恐怕連三千大千世界都無法照滿，更何況要遍照十方呢！</td><td class="bh7p10-guan"><b>有限數量與無限空間的落差之惑</b>——此問從數學上的比例質疑：既然光明的道數是可數、有限的，如何能夠照滿乃至遍及十方無量無邊的世界？這是全品最後一輪、也是最具思辨性的問答。</td></tr><tr><td class="bh7p10-qa">答曰：此身光是諸光之本，從本，枝流無量無數。譬如迦羅求羅虫，其身微細，得風轉大，乃至能吞食一切；光明亦如是，得可度眾生轉增無限。</td><td>回答說：這身上所放的光明，是一切光明的根本；從這個根本出發，如同枝葉分流一般，衍生出無量無數的光明。譬如迦羅求羅蟲，牠的身形原本極其微細，一旦得風便會逐漸膨脹增大，乃至於能夠吞食一切；佛的光明也是如此，只要遇到值得度化的眾生因緣，便會隨之輾轉增長，直至無限無量。</td><td class="bh7p10-guan"><b>本末相生——有限之數只是無限之本</b>——答案的關鍵在於區分「本」與「枝流」：六百萬億這個可數的數字，只是光明的「根本」，並非光明的全部；一旦因緣具足（如迦羅求羅蟲得風），便會枝流繁衍、輾轉增長至無量無數。這說明有限的起始數量與無限的展開作用並不矛盾，正如一粒種子雖可計數，其所能開展的緣起效應卻無有窮盡。</td></tr></tbody></table><p class="bh7p10-note">本品經文記佛從足下千輻相輪放六百萬億光明。論主以四輪問答逐一解惑：身光為智慧光明的先導方便，令眾生漸離欲染；佛光遍滿三千大千世界、能令聞法得度，與天人光明有限有量、僅令歡喜迥異；佛不自貴光、不為利養，故捨頭從足下放光，亦恐口出光令眾生怖畏；六百萬億雖是可數之本，因緣具足則枝流無量，如迦羅求羅蟲得風轉大。白話忠於原意、逐段對照（經在最頂，問在答前）。中觀關鍵詞：身光為智慧先導的善巧方便　不自貴光不為利養捨尊就卑　本末相生有限之數本自無限</p></div></div>
+<script id="wy-bh7p10-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p10Btn"),BOX=document.getElementById("bh7p10Box"),MODAL=document.getElementById("bh7p10Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p10Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p10Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P10:END-->
 </body>
 </html>
