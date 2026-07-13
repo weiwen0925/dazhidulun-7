@@ -2226,5 +2226,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P3:END-->
+<!--WY-BH7P4:BEGIN-->
+<style id="wy-bh7p4-css">
+.bh7p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p4-fabbox.show{display:block;}
+.bh7p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p4-modal.open{display:flex;}
+.bh7p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p4-close:hover{background:#dde2e6;}
+.bh7p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p4-tbl th,.bh7p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p4-tbl thead th:nth-child(1){width:32%;}.bh7p4-tbl thead th:nth-child(2){width:41%;}.bh7p4-tbl thead th:nth-child(3){width:27%;}
+.bh7p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p4-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p4-guan{background:#eef2f5;color:#37505f;}
+.bh7p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p4-tbl tbody tr:nth-child(even) td.bh7p4-guan{background:#e8eef2;}
+.bh7p4-tbl tbody tr:nth-child(even) td.bh7p4-qa{background:#e7ecdb;}
+.bh7p4-tbl b{color:#8b2500;}
+.bh7p4-guan b{color:#2f6b5a;}
+.bh7p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p4-fabbox{right:14px;}.bh7p4-tbl{font-size:11px;}.bh7p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p4-fabbox" id="bh7p4Box"><button class="bh7p4-btn" id="bh7p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p4-ic">譯</span><span class="bh7p4-ls"><span class="bh7p4-l1">本品 · 原文·白話·中觀</span><span class="bh7p4-l2">白話翻譯表</span></span></button></div><div class="bh7p4-modal" id="bh7p4Modal" role="dialog" aria-modal="true"><div class="bh7p4-card"><button class="bh7p4-close" id="bh7p4Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第4品 白話翻譯表（斷見纏煩惱釋論）</h3><p class="sub">《大智度論》卷七‧第4品‧斷見纏煩惱釋論：見纏煩惱三層解構、常斷二見、十纏九十八結、三人夢悟諸法空公案 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh7p4-tbl"><caption>斷見纏煩惱釋論 · 原文｜白話翻譯｜中觀概念（共17段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p4-src">能斷種種見、纏及諸煩惱。</td><td>（菩薩）能夠斷除種種邪見、種種纏縛，以及種種煩惱。</td><td class="bh7p4-guan"><b>經文標宗——三層解構總綱</b>——本品經文僅此一句，卻將所斷之障拆為「見、纏、煩惱」三層：見是認知層面的戲論網絡，纏是現象層面的黏著機制，煩惱是深層的心理根源；三層構成一只由表入裡的「解構漏斗」，是全品展開的總綱。</td></tr><tr><td class="bh7p4-src">「見」有二種：一者常，二者斷。常見者，見五眾常，心忍樂；斷見者，見五眾滅，心忍樂。一切眾生多墮此二見中。菩薩自斷此二，亦能除一切眾生二見，令處中道。</td><td>「見」（邪見）有兩種：第一種是「常見」，第二種是「斷見」。所謂常見，是執見五蘊恆常不變，心中認可、樂於安住在這種見解之中；所謂斷見，是執見五蘊終將斷滅消失，心中同樣認可、樂於安住在這種見解之中。一切眾生大多墮落在這兩種邪見之中。菩薩自己斷除了這兩種見，也能夠幫助一切眾生斷除這兩種見，使他們安住於不落兩邊的中道。</td><td class="bh7p4-guan"><b>破常斷二見——中道之首要戰場</b>——常見執「有」（五蘊恆常）、斷見執「無」（五蘊斷滅），二者正是「有無二邊」在生命觀上最根本的展現；菩薩「令處中道」，即是以中觀正見同時破除執常、執斷二種邊見，是全品「解構漏斗」最上層、也是最基礎的一戰。</td></tr><tr><td class="bh7p4-src">復有二種見：有見、無見。復有三種見：一切法忍，一切法不忍，一切法亦忍亦不忍。</td><td>此外還有兩種見：「有見」與「無見」。另外還有三種見：對一切法都認可接受（一切法忍）、對一切法都不認可接受（一切法不忍）、對一切法既認可又不認可（一切法亦忍亦不忍）。</td><td class="bh7p4-guan"><b>見的邏輯展開——四句雛形</b>——「有見、無見」是常斷二見的另一種表述，「忍、不忍、亦忍亦不忍」則已隱含「有、無、亦有亦無」乃至下文「非有非無」的四句邏輯結構；諸見的分類越往下開展，越顯示出「見」本質上是概念對諸法所作的種種戲論性安立。</td></tr><tr><td class="bh7p4-src">復有四種見：世間常，世間無常，世間亦常亦無常，世間亦非常亦非無常。我及世間有邊、無邊亦如是。有死後如去，有死後不如去，有死後如去不如去，有死後亦不如去亦不不如去。</td><td>還有四種見：認為世間是恆常的、認為世間是無常的、認為世間既恆常又無常、認為世間既非恆常也非無常。「我」與「世間」是有邊際的、還是無邊際的，同樣也可以開展出這四種見解。至於人死後是延續而去、還是死後不再延續而去、還是死後既延續而去又不延續而去、還是死後既非延續而去也非不延續而去，同樣也有這四種見解。</td><td class="bh7p4-guan"><b>四句破——十四難的邏輯母體</b>——「常、無常、亦常亦無常、非常非無常」正是標準的「四句」形式，也是佛陀「十四難」（世間常無常、有邊無邊、如去不如去、身命一異）背後共通的邏輯母體；龍樹在此不厭其煩地窮舉四句，正是要讓讀者看清一切戲論見解，皆逃不出這四句的框架，而四句本身即是「見」的病灶所在。</td></tr><tr><td class="bh7p4-src">復有五種見：身見、邊見、邪見、見取、戒取。</td><td>還有五種見：身見（執五蘊為我）、邊見（執常或斷二邊）、邪見（撥無因果）、見取（執取錯誤知見為最勝）、戒取（執取錯誤戒禁為能得解脫）。</td><td class="bh7p4-guan"><b>五見——見惑的標準分類</b>——此五見即部派佛教「見惑」的標準分類，是後文「六十二見」等更龐大見網的基礎單元；由二見、三見、四見層層遞增至五見，可見「見」的分類體系本身即是不斷自我增殖的戲論結構，恰是下文「能斷」所要對治的對象全貌。</td></tr><tr><td class="bh7p4-src">「纏」者，十纏：瞋纏、覆罪纏、睡纏、眠纏、戲纏、掉纏、無慚纏、無愧纏、慳纏、嫉纏。</td><td>所謂「纏」，指的是十種纏縛：瞋纏（瞋恚之纏）、覆罪纏（隱藏罪過之纏）、睡纏（昏昧之纏）、眠纏（貪睡之纏）、戲纏（掉舉嬉戲之纏）、掉纏（心浮動不安之纏）、無慚纏（對己無慚愧之纏）、無愧纏（對他無愧疚之纏）、慳纏（慳吝之纏）、嫉纏（嫉妒之纏）。</td><td class="bh7p4-guan"><b>從見到纏——由認知戲論轉入現象黏著</b>——「見」是概念層面的錯誤知見，「纏」則是這些見與煩惱在現實心行中具體黏纏、發作的十種樣態（瞋、覆罪、睡眠、掉舉、慳嫉等）；解構漏斗由抽象的「見」下沉至具體可觀察的「纏」，論述層次由理入事。</td></tr><tr><td class="bh7p4-src">復次，一切煩惱結繞心故，盡名為「纏」。</td><td>再者，一切煩惱由於纏繞束縛心識的緣故，全都可以稱為「纏」。</td><td class="bh7p4-guan"><b>纏之廣義——煩惱皆纏</b>——此句補充說明「纏」字的廣義用法：狹義的「纏」專指前述十種，廣義而言，一切煩惱只要具有「纏繞心識」的作用，都可統稱為纏，顯示「纏」並非與「煩惱」截然二分的獨立範疇，而是煩惱的一種功能性描述。</td></tr><tr><td class="bh7p4-src">纏者，有人言「十纏」，有人言「五百纏」。</td><td>關於「纏」的數目，有人說是「十纏」，也有人說多達「五百纏」。</td><td class="bh7p4-guan"><b>異說並陳——不強求定量</b>——論主在此並不強行統一「十纏」與「五百纏」兩種異說，而是如實並陳，顯示「纏」的數目本是隨觀察角度精粗而有寬窄，並無一個固定不變的「正確數目」，這本身已隱含法無定量、施設隨緣的態度。</td></tr><tr><td class="bh7p4-src">「煩惱」者，能令心煩，能作惱故，名為「煩惱」。</td><td>所謂「煩惱」，是因為它能夠使心煩擾、能夠造作惱害，所以稱為「煩惱」。</td><td class="bh7p4-guan"><b>釋名——煩惱之訓詁</b>——以「令心煩、能作惱」直接訓釋「煩惱」二字的字面意義，是解構漏斗第三層——由「纏」的現象學再向下探入「煩惱」這一心理根源的起點。</td></tr><tr><td class="bh7p4-src">煩惱有二種：內著，外著──內著者，五見、疑、慢等；外著者，婬、瞋等；無明內外共。</td><td>煩惱有兩種：一種是「內著」，一種是「外著」。內著，是指五見、疑、慢等（偏於見解、心態層面的執著）；外著，是指貪婬、瞋恚等（偏於外境、對象層面的執著）；而無明則是內著與外著兩者都共同具足的根源。</td><td class="bh7p4-guan"><b>內外二著——見惑與思惑的二分</b>——「內著」大致對應見惑（五見、疑、慢，偏於知見層面），「外著」大致對應思惑（婬、瞋，偏於境界貪染層面），而「無明」則貫通內外二者，是二者共同的深層根源；此一分類已為下文「屬愛、屬見」的二分法預作鋪墊。</td></tr><tr><td class="bh7p4-src">復有二種結：一、屬愛，二、屬見。復有三種：屬婬，屬瞋，屬癡。是名煩惱。</td><td>又有兩種「結」（煩惱的異名）：第一種是屬於「愛」的結，第二種是屬於「見」的結。還有三種：屬於貪婬的、屬於瞋恚的、屬於愚癡的。這些統稱為「煩惱」。</td><td class="bh7p4-guan"><b>愛結與見結——貪瞋癡三毒的收攝</b>——「屬愛」對應境界貪染（近於外著），「屬見」對應知見執取（近於內著），二者再開展為貪婬、瞋恚、愚癡三毒，可見前文「內著外著」二分與此處「愛結見結」二分，實為同一結構在不同術語下的重述，顯示論主反覆從不同角度逼近同一組煩惱的本質。</td></tr><tr><td class="bh7p4-src">煩惱名一切結使：結有九結，使有七，合為九十八結。</td><td>煩惱又可統稱為一切「結使」：「結」共有九種，「使」共有七種，二者展開合計共有九十八種結。</td><td class="bh7p4-guan"><b>九結七使九十八結——部派阿毘曇的精細分類</b>——此處引入部派佛教阿毘曇論典中極為精細的煩惱分類體系（九結、七使、九十八結），顯示「煩惱」在傳統教理中可以被系統化、數量化地窮盡分析，然而下文即將指出，不同論典對此數目的計算方式並不一致。</td></tr><tr><td class="bh7p4-src">如《迦旃延子阿毘曇》義中說：十纏、九十八結，為百八煩惱。復有異說《犢子兒阿毘曇》中，結使亦同纏，有五百。</td><td>就如《迦旃延子阿毘曇》書中所說：十纏加上九十八結，合稱為一百零八種煩惱。但另有不同說法，《犢子兒阿毘曇》書中則說，結使的數目與「纏」相同，共有五百種。</td><td class="bh7p4-guan"><b>百八與五百——異部異說並存不強判</b>——同樣是計算煩惱總數，《迦旃延子阿毘曇》得出「百八煩惱」，《犢子兒阿毘曇》卻得出「五百」，兩部論書數目懸殊，論主僅如實並列而不強加取捨；這與前文「十纏／五百纏」的並陳態度一致，暗示「煩惱」的精確數目本非重點所在，重點在於「如何斷」。</td></tr><tr><td class="bh7p4-src">如佛在時，三人為伯、仲、季，聞毘耶離國婬女人名菴羅婆利，舍婆提有婬女人名須曼那，王舍城婬女人名優鉢羅槃那。有三人各各聞人讚三女人端正無比，晝夜專念，心著不捨。便於夢中，夢與從事。</td><td>就如佛在世時，有兄弟三人，長兄、次兄、幼弟三人，分別聽聞到毘耶離國有一位名叫菴羅婆利的美貌婬女，舍婆提城有一位名叫須曼那的美貌婬女，王舍城有一位名叫優鉢羅槃那的美貌婬女。這三個人各自聽聞人們讚歎這三位女子容貌端正、無與倫比，便晝夜一心繫念、貪戀執著、無法放下。於是各自在夢中，夢見自己與心儀的女子交合成事。</td><td class="bh7p4-guan"><b>公案起——三人各自因愛染而入夢</b>——此則公案以極具現實感的「暗戀成夢」場景開篇，具體演示前文所述「屬愛之結」、「外著之婬」如何從聽聞、憶念一路發展為夢境執著，是下文「因夢悟空」哲學轉折最生動的文獻鋪墊。</td></tr><tr><td class="bh7p4-src">覺已心念：彼女不來，我亦不往，而婬事得辦；因是而悟：一切諸法，皆如是耶？</td><td>三人醒來之後各自心想：那女子並沒有真的前來，我自己也沒有真的前去，然而交合之事卻在夢中真實地成就了；由此而醒悟到：難道一切諸法，都是像這夢境一樣（並無實體、唯從念想而生）的嗎？</td><td class="bh7p4-guan"><b>夢喻悟空——從特例到一切法的躍升</b>——三人各自從「不來不往而事成」這一具體夢境經驗，躍升到「一切諸法皆如是」的普遍性洞見，正是《大智度論》「十喻」系列中「如夢」一喻在敘事層面的具體展演：夢境無實而歷歷分明，正喻諸法緣起無自性、如幻而顯現的中道實相。</td></tr><tr><td class="bh7p4-src">於是往到颰陀婆羅菩薩所，問是事。颰陀婆羅答言：「諸法實爾，皆從念生。」如是種種為此三人方便巧說諸法空，是時三人即得阿鞞跋致。</td><td>於是三人便一同前往颰陀婆羅菩薩的住處，請教這件事。颰陀婆羅菩薩回答說：「一切諸法的實相確實是這樣，都是隨著心念而生起的。」就這樣，菩薩以種種善巧方便為這三人解說諸法皆空的道理，這時三人便當下證得了「阿鞞跋致」（不退轉）的果位。</td><td class="bh7p4-guan"><b>巧說法空——由夢境直證不退轉</b>——颰陀婆羅菩薩「諸法實爾，皆從念生」一語，正是為三人的親身經驗（夢中無實而事辦）畫龍點睛，直指一切法緣起唯心、無自性可得；由一場夢境的親身體悟，透過菩薩善巧引導，竟能當下證得阿鞞跋致，顯示「巧方便說」較之抽象理論說教，更能契入根機而速得實益。</td></tr><tr><td class="bh7p4-src">是諸菩薩亦復如是，為諸眾生種種巧說法，斷諸見、纏、煩惱。是名「能斷種種見、纏及諸煩惱」。</td><td>諸位菩薩也是同樣的道理，為了一切眾生，以種種善巧方便說法，來斷除他們心中的種種邪見、纏縛與煩惱。這就是經文所說的「能斷種種見、纏及諸煩惱」的真實意涵。</td><td class="bh7p4-guan"><b>總結全品——巧方便說法為斷障之本</b>——以此句總結全品：從常斷二見、五見、十纏、九十八結等層層精細的名相分析，到三人因夢悟空的具體公案，最終收束於「種種巧說法」——可見「能斷」的關鍵，不在於窮盡背誦煩惱名相的數目，而在於菩薩能觀機逗教、以善巧方便契入眾生根性，令其當下照見諸法性空，見、纏、煩惱自然消解。</td></tr></tbody></table><p class="bh7p4-note">本品經文僅「能斷種種見、纏及諸煩惱」一句，論主將所斷之障拆為見、纏、煩惱三層解構漏斗，窮舉常斷二見、四句、五見、十纏、九十八結等部派名相分類，終以三兄弟因夢悟一切法空而得阿鞞跋致的公案，收束於「種種巧說法」方為斷障之本。白話忠於原意、逐段對照（本品原典為經論直述與公案敘事，無獨立問答標記，如實呈現）。　中觀關鍵詞：常斷二見中道　見纏煩惱解構漏斗　夢喻悟空　巧方便說法斷障</p></div></div>
+<script id="wy-bh7p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p4Btn"),BOX=document.getElementById("bh7p4Box"),MODAL=document.getElementById("bh7p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p4Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P4:END-->
 </body>
 </html>
