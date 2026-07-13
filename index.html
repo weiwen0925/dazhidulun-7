@@ -2685,5 +2685,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P12:END-->
+<!--WY-BH7P13:BEGIN-->
+<style id="wy-bh7p13-css">
+.bh7p13-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p13-fabbox.show{display:block;}
+.bh7p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p13-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p13-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p13-modal.open{display:flex;}
+.bh7p13-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p13-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p13-close:hover{background:#dde2e6;}
+.bh7p13-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p13-tbl th,.bh7p13-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p13-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p13-tbl thead th:nth-child(1){width:32%;}.bh7p13-tbl thead th:nth-child(2){width:41%;}.bh7p13-tbl thead th:nth-child(3){width:27%;}
+.bh7p13-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p13-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p13-guan{background:#eef2f5;color:#37505f;}
+.bh7p13-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p13-tbl tbody tr:nth-child(even) td.bh7p13-guan{background:#e8eef2;}
+.bh7p13-tbl tbody tr:nth-child(even) td.bh7p13-qa{background:#e7ecdb;}
+.bh7p13-tbl b{color:#8b2500;}
+.bh7p13-guan b{color:#2f6b5a;}
+.bh7p13-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p13-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p13-fabbox{right:14px;}.bh7p13-tbl{font-size:11px;}.bh7p13-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p13-fabbox" id="bh7p13Box"><button class="bh7p13-btn" id="bh7p13Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p13-ic">譯</span><span class="bh7p13-ls"><span class="bh7p13-l1">本品 · 原文·白話·中觀</span><span class="bh7p13-l2">白話翻譯表</span></span></button></div><div class="bh7p13-modal" id="bh7p13Modal" role="dialog" aria-modal="true"><div class="bh7p13-card"><button class="bh7p13-close" id="bh7p13Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第13品 白話翻譯表（光明出過恆河沙）</h3><p class="sub">《大智度論》卷七‧第13品‧光明出過恆河沙：光明超過東方恒河沙等世界乃至十方，論主以五輪問答層層追問三千大千世界為何、光何以遠照不滅、何以獨取恒河沙為喻、恒河沙數為有幾許、何不常放光明令一切得道 · 原文↔白話↔中觀概念對照（含五問五答）</p><table class="bh7p13-tbl"><caption>光明出過恆河沙 · 原文｜白話翻譯｜中觀概念（共11段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p13-src">光明出過東方如恒河沙等世界，乃至十方亦復如是。</td><td>光明超越照亮東方如恒河沙數那樣多的世界，乃至十方世界也都是如此。</td><td class="bh7p13-guan"><b>果地宣告：光明超過恒河沙數世界</b>——經文以『恒河沙』這一佛典慣用的極大數量譬喻，宣告光明所照範圍之廣，遠超尋常經驗所能想像，為以下五輪問答鋪陳討論的起點。</td></tr><tr><td class="bh7p13-qa">問曰：云何為三千大千世界？</td><td>有人問：什麼是三千大千世界呢？</td><td class="bh7p13-guan"><b>設疑：光明所照的空間座標究竟為何</b>——此問是全品第一重追問，要先弄清楚『三千大千世界』這個空間概念的具體結構，才能進一步理解光明遍照的範圍究竟有多廣大。</td></tr><tr><td class="bh7p13-qa">答曰：佛《雜阿含》中分別說：千日、千月、千閻浮提、千衢陀尼、千欝怛羅越、千弗婆提、千須彌山、千四天王天處、千三十三天、千夜摩天、千兜率陀天、千化自在天、千他化自在天、千梵世天、千大梵天，是名小千世界，名周利。以周利千世界為一，一數至千，名二千中世界。以二千中世界為一，一數至千，名三千大千世界。初千小，二千中，第三名大千。千千重數，故名「大千」；二過復千，故言「三千」。是合集名。百億日月乃至百億大梵天，是名三千大千世界。是一時生、一時滅。有人言：住時一劫，滅時一劫，還生時一劫。是三千大千世界，大劫亦三種破：水、火、風；小劫亦三種破：刀、病、飢。此三千大千世界在虛空中；風上水，水上地，地上人。須彌山有二天處：四天處，三十三天處。餘殘夜摩天等，福德因緣七寶地，風舉空中；乃至大梵天，皆七寶地，皆在風上。是三千大千世界光明遍照，照竟，餘光過出，照東方如恒河沙等諸世界；南西北方、四維、上下，亦復如是。</td><td>回答說：佛陀在《雜阿含經》中曾分別解說：一千個日、一千個月、一千個閻浮提（南贍部洲）、一千個瞿陀尼（西牛貨洲）、一千個鬱怛羅越（北俱盧洲）、一千個弗婆提（東勝身洲）、一千座須彌山、一千處四天王天、一千個三十三天、一千個夜摩天、一千個兜率陀天、一千個化自在天、一千個他化自在天、一千個梵世天、一千個大梵天，這樣合稱為一個小千世界，又名『周利』。以一個周利千世界為單位，這樣的單位數到一千個，便稱為『二千中世界』。再以一個二千中世界為單位，這樣的單位再數到一千個，便稱為『三千大千世界』。最初的一千稱為『小』，第二重的一千稱為『中』，第三重的一千稱為『大千』。因為是千千重疊而數，所以稱為『大千』；又因經過了兩重『千』的疊加，所以稱為『三千』。這是合併累計而成的名稱。總計百億個日月，乃至百億個大梵天，這樣的範圍，便稱為一個『三千大千世界』。這整個世界是同時生成、同時毀滅的。也有人說：三千大千世界安住的時間是一劫，毀滅的時間是一劫，重新生成的時間也是一劫。這三千大千世界，若逢大劫毀滅，共有水災、火災、風災三種毀滅方式；若逢小劫，則有刀兵、疾疫、饑饉三種災難。這整個三千大千世界安立於虛空之中：風輪之上是水輪，水輪之上是地輪，地輪之上才是人所居住之處。須彌山中有兩重天處：四天王天處與三十三天處。其餘如夜摩天等諸天，則憑藉福德因緣所感的七寶大地，由風輪托舉、懸浮於空中；乃至大梵天，也都是七寶大地，同樣安立於風輪之上。這整個三千大千世界的光明遍照之後，多餘的光明還會繼續向外延伸，照亮東方如恒河沙數那樣多的其他世界；南方、西方、北方、四維、上方、下方，也都是同樣的道理。</td><td class="bh7p13-guan"><b>破執：以嚴密宇宙論結構回應空間之問</b>——答案先鋪陳『千—中千—大千』層層疊加的宇宙結構，並說明此三千大千世界同生同滅、依風水地三輪安立；龐大如三千大千世界者，尚且不離生滅成壞的緣起法則，遑論其中光明之遍照，亦是緣起假立，非有獨立不變的自性可得。</td></tr><tr><td class="bh7p13-qa">問曰：是光遠照，云何不滅？</td><td>有人問：這光明能夠遠照到如此廣大的範圍，為什麼卻不會熄滅呢？</td><td class="bh7p13-guan"><b>設疑：追問光明存續的根本依據</b>——延續前品『光明幾時當滅』的探問，此問更進一步：既然照及範圍如此遙遠廣大，其不滅的根本原因究竟何在？</td></tr><tr><td class="bh7p13-qa">答曰：光明以佛神力為本，本在故不滅。譬如龍泉，龍力故水不竭。是諸光明以佛心力故，遍照十方，中間不滅。</td><td>回答說：這光明是以佛的威神力作為根本，因為根本恆常存在，所以光明也不會熄滅。譬如龍泉之水，是憑藉龍的威力才能源源不絕、永不枯竭；這些光明也是同樣的道理，是憑藉佛心之力的緣故，才能遍照十方，在中途絕不熄滅。</td><td class="bh7p13-guan"><b>本體：光明不滅繫於佛之心力這一『本』</b>——以龍泉喻佛心力，說明光明的相續不斷並非光明自身具有恆常自性，而是『本在故不滅』——依於能生之根本而相續示現，正是緣起法『依緣而有、依緣而續』的體現。</td></tr><tr><td class="bh7p13-qa">問曰：如閻浮提中種種大河，亦有過恒河者，何以常言「恒河沙等」？</td><td>有人問：就如同閻浮提之中有種種大河，其中也有勝過恒河的，為什麼佛經之中總是說『如恒河沙那樣多』，而不用其他河流作比喻呢？</td><td class="bh7p13-guan"><b>設疑：譬喻選擇是否有客觀依據</b>——此問質疑『恒河沙』這一慣用譬喻的合理性，既然有比恒河更大的河流，為何獨獨偏取恒河為喻，是否有失公允或只是隨意慣例？</td></tr><tr><td class="bh7p13-qa">答曰：恒河沙多，餘河不爾。復次，是恒河是佛生處、遊行處，弟子眼見，故以為喻。復次，佛出閻浮提，閻浮提四大河北邊出，入四方大海中。北邊雪山中，有阿那婆達多池；是池中有金色七寶蓮華，大如車蓋。阿那婆達多龍王，是七住大菩薩。是池四邊有四流水：東方象頭，南方牛頭，西方馬頭，北方師子頭。東方象頭出恒河，底有金沙；南方牛頭出辛頭河，底亦有金沙；西方馬頭出婆叉河，底亦有金沙；北方師子頭出私陀河，底亦有金沙。是四河皆出北山：恒河出北山入東海，辛頭河出北山入南海，婆叉河出北山入西海，私陀河出北山入北海。是四河中，恒河最大；四遠諸人經書，皆以恒河為福德吉河，若入中洗者，諸罪垢惡皆悉除盡。以人敬事此河，皆共識知故，以恒河沙為喻。復次，餘河名字喜轉，此恒河世世不轉，以是故，以恒河沙為喻，不取餘河。</td><td>回答說：恒河之中的沙特別細多，其餘河流則不然。再者，恒河是佛陀出生之地、遊行教化之處，佛陀的弟子們大多親眼見過這條河，所以才拿它來作比喻。再者，佛陀出現於閻浮提，閻浮提有四條大河，都是從北方雪山邊發源，分別流入四方大海之中。在北邊雪山之中，有一處名叫阿那婆達多的池子；池中生長著金色的七寶蓮花，大小如同車蓋一般。阿那婆達多龍王，其實是已證得七住位的大菩薩。這個池子的四邊各有一道流水湧出：東方由象頭湧出，南方由牛頭湧出，西方由馬頭湧出，北方由獅子頭湧出。東方象頭所湧出的是恒河，河底有金沙；南方牛頭所湧出的是辛頭河，河底也有金沙；西方馬頭所湧出的是婆叉河，河底也有金沙；北方獅子頭所湧出的是私陀河，河底也有金沙。這四條河都發源自北方雪山：恒河發源於北山，流入東海；辛頭河發源於北山，流入南海；婆叉河發源於北山，流入西海；私陀河發源於北山，流入北海。在這四條河之中，恒河的水量最為浩大；四方遠近的人們在他們的經書之中，都尊恒河為帶來福德的吉祥河流，若有人入河中沐浴，一切罪垢惡業都能因此洗除淨盡。正因為人人敬重供事這條河，大家都共同熟識它，所以才拿恒河沙作比喻。再者，其餘河流的名字時常變換不定，唯獨這條恒河，世世代代名字都不曾改變，因此才用恒河沙作比喻，而不取其餘河流。</td><td class="bh7p13-guan"><b>破執：譬喻的擇取自有其世俗共許的因緣</b>——答案不從『數量客觀最大』立論，反而從『佛陀生處遊行處』『世人共同敬信熟知』『名字歷世不變』等世俗共許的角度說明恒河作喻的合理性，顯示譬喻的成立並不繫於抽象的『唯一客觀標準』，而是緣於眾生共同的認識與信解基礎——正是世俗諦『隨順世間共許而立名言』的具體示現。</td></tr><tr><td class="bh7p13-qa">問曰：恒河中沙，為有幾許？</td><td>有人問：恒河之中的沙，究竟有多少數量呢？</td><td class="bh7p13-guan"><b>設疑：追問極大數量是否可知</b>——此問將焦點從『為何用恒河沙為喻』轉向『恒河沙究竟多少』，質疑用一個連數量都難以確知的東西作比喻，是否有意義。</td></tr><tr><td class="bh7p13-qa">答曰：一切算數所不能知，唯有佛及法身菩薩能知其數。佛及法身菩薩，一切閻浮提中微塵生滅多少，皆能數知，何況恒河沙？如佛在祇桓外林中樹下坐，有一婆羅門來到佛所問佛：「此樹林有幾葉？」佛即時便答：「有若干數。」婆羅門心疑：「誰證知者？」婆羅門去至一樹邊，取一樹上少葉藏，還問佛：「此樹林定有幾葉？」即答：「今少若干葉。」如其所取語之。婆羅門知已，心大敬信，求佛出家，後得阿羅漢道。以是故，知佛能知恒河沙數。</td><td>回答說：這個數量，是一切世間算數方法都無法計算得知的，唯獨佛陀以及已證得法身的菩薩，才能夠確知它的數目。佛陀與法身菩薩，就連整個閻浮提之中微塵生滅的數量都能夠一一數知，更何況只是恒河之中的沙呢？譬如佛陀曾在祇桓精舍外的林間樹下靜坐，有一位婆羅門前來拜見佛陀，問道：『這片樹林一共有多少片葉子？』佛陀當下便回答：『共有若干片。』婆羅門心中生起懷疑，暗想：『有誰能夠證實這個數目呢？』於是這位婆羅門便走到一棵樹邊，偷偷摘下幾片葉子藏起來，然後回來再問佛陀：『這片樹林究竟確實有多少片葉子？』佛陀便回答說：『如今少了若干片。』所回答的數目，正好與婆羅門所摘取藏起的葉子數目相符。婆羅門知道之後，心中生起極大的敬信，於是請求跟隨佛陀出家，後來證得了阿羅漢果位。由此可知，佛陀確實能夠了知恒河沙那樣的數量。</td><td class="bh7p13-guan"><b>本體：唯佛與法身菩薩能知的『不可算數』之智</b>——透過『數樹葉』的公案具體印證：佛的智慧能徹知微塵生滅乃至恒河沙數這樣『一切算數所不能知』的境界，說明佛智並非世俗計量思維的延伸，而是超越凡夫分別心所能企及的究竟智慧，藉此讓『恒河沙』從單純的譬喻，昇華為佛智不可思議的具體印證。</td></tr><tr><td class="bh7p13-qa">問曰：有幾許人值佛光明必得阿耨多羅三藐三菩提？若值光明便得道者，佛有大慈，何以不常放光明令一切得道？何須持戒、禪定、智慧，然後得道？</td><td>有人問：究竟有多少人只要遇到佛的光明照觸，就必定能證得無上正等正覺呢？如果遇到光明照觸便能夠得道，那麼佛陀既具有廣大的慈悲，為什麼不經常放光，讓一切眾生都因此得道呢？又何必還需要持戒、修習禪定、增長智慧，然後才能得道呢？</td><td class="bh7p13-guan"><b>設疑：質疑修行次第是否多餘</b>——此問是全品最尖銳的一問：既然光明照觸便可得無上菩提，那麼持戒、禪定、智慧等一切修行次第豈非成了多餘的贅設？此問實際質疑的是『因緣多樣性』與『修行必要性』之間的關係。</td></tr><tr><td class="bh7p13-qa">答曰：眾生種種因緣得度不同：有禪定得度者，有持戒說法得度者，有光明觸身而得度者。譬如城有多門入處，各各至處不異。有人光明觸身而得度者，有若見光明、若觸身不得度者。</td><td>回答說：眾生得度的因緣各有不同：有依憑禪定而得度的，有依憑持戒、聽聞說法而得度的，也有依憑光明照觸己身而得度的。這就好比一座城池設有許多城門，眾人無論從哪一道門進入，最終所抵達的地方並無不同。也正因如此，有的人是光明照觸己身便得度的；但也有的人，即使看見了光明、甚至光明照觸到了身體，卻仍然不能因此得度。</td><td class="bh7p13-guan"><b>中觀收攝：因緣萬殊、歸趣無異</b>——以『多門入城』為喻，說明持戒、禪定、智慧、光明照觸等種種法門，皆是隨順不同眾生因緣而施設的方便之『緣』，並非彼此排斥；『若見光明、若觸身不得度者』更點明光明本身並非得度的獨立自性因，成敗端在各人因緣是否具足——這正是緣起法『萬法因緣生、無有獨一定法』的中道實相，也回應了全品自『三千大千世界』以下五輪追問的終極歸趣。</td></tr></tbody></table><p class="bh7p13-note">本品經文記光明出過東方如恒河沙等世界，乃至十方亦復如是。論主以五輪問答層層遞進：先陳三千大千世界千—中千—大千的宇宙結構，此世界同生同滅、依風水地三輪安立；光明不滅繫於佛之神力，如龍泉不竭；恒河沙之喻取於佛之生處遊行處、世人共信、名字世世不轉，非取數量客觀最大；恒河沙數唯佛與法身菩薩能知，如數樹葉公案所證；末以眾生因緣萬殊、如城多門、殊途同歸，說明持戒禪定智慧與光明觸身皆是隨緣方便，非唯一定法。白話忠於原意、逐段對照（經在最頂，問在答前）。中觀關鍵詞：世界同生同滅、無自性可執　譬喻依世俗共許而立　因緣萬殊、歸趣無異的中道實相</p></div></div>
+<script id="wy-bh7p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p13Btn"),BOX=document.getElementById("bh7p13Box"),MODAL=document.getElementById("bh7p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p13Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P13:END-->
 </body>
 </html>
