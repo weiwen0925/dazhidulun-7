@@ -2736,5 +2736,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH7P13:END-->
+<!--WY-BH7P14:BEGIN-->
+<style id="wy-bh7p14-css">
+.bh7p14-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh7p14-fabbox.show{display:block;}
+.bh7p14-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh7p14-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh7p14-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh7p14-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh7p14-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh7p14-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh7p14-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh7p14-modal.open{display:flex;}
+.bh7p14-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh7p14-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh7p14-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh7p14-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh7p14-close:hover{background:#dde2e6;}
+.bh7p14-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh7p14-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh7p14-tbl th,.bh7p14-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh7p14-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh7p14-tbl thead th:nth-child(1){width:32%;}.bh7p14-tbl thead th:nth-child(2){width:41%;}.bh7p14-tbl thead th:nth-child(3){width:27%;}
+.bh7p14-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh7p14-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh7p14-guan{background:#eef2f5;color:#37505f;}
+.bh7p14-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh7p14-tbl tbody tr:nth-child(even) td.bh7p14-guan{background:#e8eef2;}
+.bh7p14-tbl tbody tr:nth-child(even) td.bh7p14-qa{background:#e7ecdb;}
+.bh7p14-tbl b{color:#8b2500;}
+.bh7p14-guan b{color:#2f6b5a;}
+.bh7p14-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh7p14-note b{color:#8b2500;}
+@media(max-width:900px){.bh7p14-fabbox{right:14px;}.bh7p14-tbl{font-size:11px;}.bh7p14-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh7p14-fabbox" id="bh7p14Box"><button class="bh7p14-btn" id="bh7p14Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh7p14-ic">譯</span><span class="bh7p14-ls"><span class="bh7p14-l1">本品 · 原文·白話·中觀</span><span class="bh7p14-l2">白話翻譯表</span></span></button></div><div class="bh7p14-modal" id="bh7p14Modal" role="dialog" aria-modal="true"><div class="bh7p14-card"><button class="bh7p14-close" id="bh7p14Close" type="button" aria-label="關閉">×</button><h3>卷七 · 第14品 白話翻譯表（毛孔皆笑）</h3><p class="sub">《大智度論》卷七‧第14品‧毛孔皆笑：世尊舉身毛孔皆亦微笑放光，遍照三千大千世界乃至十方恒河沙等世界；論主以一問三答（麁細、有數無數、搖樹捕魚二喻）層層解構「已舉身微笑何須毛孔皆笑」之世俗效率觀質疑 · 原文↔白話↔中觀概念對照（含一問三答）</p><table class="bh7p14-tbl"><caption>毛孔皆笑 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh7p14-src">爾時，世尊舉身毛孔皆亦微笑而放光明，遍照三千大千世界，復至十方如恒河沙等世界。若有眾生遇斯光者，必得阿耨多羅三藐三菩提。</td><td>這時，世尊全身的每一個毛孔也都一同微笑，並且放出光明，這光明遍照三千大千世界，甚至遠達十方如恆河沙數那樣多的世界。凡是遇到這道光明照觸的眾生，都必定能證得無上正等正覺（阿耨多羅三藐三菩提）。</td><td class="bh7p14-guan"><b>毛孔放光——微觀遍照的緣起顯現</b>——毛孔雖是身相中極微小的部位，卻能放光遍照十方無量世界，正顯示「小」與「大」、「一」與「多」在緣起法中並非彼此對立，而是相互含攝、彼此無礙；此即以最微觀之相示現最宏觀之用，為下文「舉身」與「毛孔」雙重放光的討論預先立基。</td></tr><tr><td class="bh7p14-qa">問曰：上已舉身微笑，今何以故復一切毛孔皆笑？</td><td>有人問：前面已經說世尊舉身微笑了，現在為什麼還要說一切毛孔也都在笑呢？</td><td class="bh7p14-guan"><b>設問破執——世俗效率觀的提出</b>——此問代表凡夫「一次即足、重複為贅」的線性效率思維，正是龍樹菩薩以下三重『復次』所要層層破斥的對象，藉此凸顯佛陀救度眾生時『麁細相濟』、不厭其煩的大悲用心。</td></tr><tr><td class="bh7p14-qa">答曰：舉身微笑是麁分，今一切毛孔皆笑是細分。</td><td>回答說：舉身微笑屬於粗略、整體性的照度；如今一切毛孔皆笑，則屬於細密、個別性的照度。</td><td class="bh7p14-guan"><b>麁細相濟——緣起法的層次性</b>——「麁」與「細」並非彼此排斥的兩種放光，而是同一慈悲光明依不同緣起條件所顯現的兩個層次，說明度化眾生須因應根機粗細之差異，兩者兼備方能無一遺漏，此即中觀不落一邊的中道施設。</td></tr><tr><td class="bh7p14-src">復次，先舉身微笑光明有數，今一切毛孔皆笑，有光明而無數。</td><td>又說：先前舉身微笑所放的光明是有限量的，如今一切毛孔所放的光明，則是無量無數的。</td><td class="bh7p14-guan"><b>有數與無數——從量化到無量的悲智提升</b>——由『有數』進至『無數』，象徵佛陀大悲並非固定量度的施予，而是隨緣起無盡展開、不可窮盡的救度；此亦體現中觀『無自性』故能無限示現的義理，光明本身不執著於固定的『數』相。</td></tr><tr><td class="bh7p14-src">復次，先舉身光明所未度者，今值毛孔光明，即便得度。譬如搖樹取果，熟者前墮；若未熟者，更須後搖。又如捕魚，前網不盡，後網乃得。笑因緣，如上說。</td><td>又說：先前舉身光明所未能度脫的眾生，如今遇到毛孔光明照觸，便得以度脫。這就好比搖動樹木摘取果實，已經熟透的果子會先掉落；還沒熟的，就必須再搖一次才能摘到。又好比撒網捕魚，前一網沒能捕盡的魚，要靠後一網才能捕獲。至於微笑放光的因緣，就如同前面所說的一樣。</td><td class="bh7p14-guan"><b>搖樹捕魚喻——雙重保險的救度機制</b>——『搖樹取果』與『捕魚』二喻，說明佛陀度化眾生猶如農夫、漁夫因應對象成熟度與位置的差異而反覆施為，並非多餘的重複，而是緣起條件千差萬別下、確保無一眾生漏網的必然安排；正顯大悲周遍而不執著於『一次性』的效率之相，呼應本品開篇『毛孔遍照』的微觀救度深意。</td></tr></tbody></table><p class="bh7p14-note">本品經文極短，僅記世尊舉身毛孔皆亦微笑放光，遍照三千大千世界乃至十方如恒河沙等世界，遇光者必得無上正等正覺。論主假設問難：既已舉身微笑，何須復令一切毛孔皆笑？答以三重「復次」層層解構：其一麁分細分之別，舉身為粗略整體照度，毛孔為細密個別照度；其二有數無數之別，舉身光明有限，毛孔光明無限；其三以搖樹取果、捕魚二喻，說明先舉身光明所未度者，值毛孔光明即得度，非多餘重複，而是「麁細相濟」確保無一眾生漏網的雙重保險救度機制。白話忠於原意、逐段對照（經在最頂，問在答前）。中觀關鍵詞：麁細相濟、無自性故無限示現　搖樹捕魚喻——緣起條件差異下的必然安排　佛陀大悲周遍而不執著一次性效率之相</p></div></div>
+<script id="wy-bh7p14-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh7p14Btn"),BOX=document.getElementById("bh7p14Box"),MODAL=document.getElementById("bh7p14Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=13;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c7p14Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh7p14Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH7P14:END-->
 </body>
 </html>
